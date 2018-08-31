@@ -1,0 +1,135 @@
+18/05/18 22:08:26.740 : INFO  : OK : Created new logfile: c:\tmp\20180518\VS_1_20180518220824.log
+18/05/18 22:08:37.365 : INFO  : OK : INIT FFMPEG DRIVERS
+18/05/18 22:08:37.521 : INFO  : OK : load lang
+18/05/18 22:08:37.708 : INFO  : OK : ReadLanguage : C:\Program Files\Neural Labs\Neural Labs VPAR Server x64 2\Release\LANGUAGES\ENGLISH\LANG.TXT
+18/05/18 22:08:37.708 : INFO  : OK : Load LIGHT RLC
+18/05/18 22:08:37.818 : INFO  : OK :CHEKING SECURITY
+18/05/18 22:08:37.833 : INFO  : OK : Checking names
+18/05/18 22:08:39.240 : INFO  : OK : Waiting for initialization : 10 Seconds. Press ESC to bypass
+18/05/18 22:08:49.255 : INFO  : OK : CHEKING FEATURE
+18/05/18 22:09:00.896 : INFO  : OK : Feature loaded 10
+18/05/18 22:09:01.209 : INFO  : OK : Loading window  conection form
+18/05/18 22:09:01.615 : INFO  : OK : 0
+18/05/18 22:09:01.678 : INFO  : OK : ReadLanguage : C:\Program Files\Neural Labs\Neural Labs VPAR Server x64 2\Release\LANGUAGES\ENGLISH\LANG.TXT
+18/05/18 22:09:01.678 : INFO  : OK : 1
+18/05/18 22:09:02.318 : INFO  : OK : Connection Test OK
+18/05/18 22:09:02.412 : INFO  : OK : CHECK COUNTRIES VPAR DLL
+18/05/18 22:09:32.834 : INFO  : OK : LOAD COUNTRIES VPAR DLL
+18/05/18 22:09:32.850 : INFO  : OK : CHECK CONFIGURATION VPS Instance
+18/05/18 22:09:34.287 : INFO  : OK : LOAD CONFIGURATION VPS Instance
+18/05/18 22:09:35.303 : ERROR : ERROR : URL parse failed! error: Object reference not set to an instance of an object.
+18/05/18 22:09:35.381 : INFO  : OK : LoadConfiguration : C:\Program Files\Neural Labs\Neural Labs VPAR Server x64 2\Release\LANGUAGES\ENGLISH\LANG.TXT
+18/05/18 22:09:35.412 : INFO  : OK : ButtonSaveConfiguration.
+18/05/18 22:09:41.287 : INFO  : OK : SaveConfiguration : C:\Program Files\Neural Labs\Neural Labs VPAR Server x64 2\Release\OPTIONS\DEFAULT\CONFIGURATION.TXT
+18/05/18 22:09:42.366 : INFO  : OK : CHECK COUNTRY
+18/05/18 22:09:42.366 : INFO  : OK : LOAD REGION AND COUNTRY
+18/05/18 22:09:43.459 : INFO  : OK : LoadConfiguration : C:\Program Files\Neural Labs\Neural Labs VPAR Server x64 2\Release\LANGUAGES\ENGLISH\LANG.TXT
+18/05/18 22:09:43.569 : INFO  : OK : Started thread_Start_Subsystems 
+18/05/18 22:09:43.584 : WARN  : WARNING 2 : Using IP Address : 127.0.0.1
+18/05/18 22:09:43.600 : INFO  : OK : Using IP Address : 127.0.0.1
+18/05/18 22:09:43.616 : INFO  : OK : Try to connect to database...
+18/05/18 22:09:43.975 : INFO  : OK : Try to connect to database ... Done.
+18/05/18 22:09:43.991 : INFO  : OK : Try to register ...
+18/05/18 22:09:43.991 : INFO  : OK : Try to register ... Done.
+18/05/18 22:09:47.131 : INFO  : OK : Analitycs engine init OK
+18/05/18 22:09:48.459 : INFO  : OK : Try to load Cameras ...
+18/05/18 22:09:50.881 : WARN  : WARNING 2 : Set detection preferences for camera:Subsuelo 2 : Read Always=True : Motion=False : Trigger=False
+18/05/18 22:09:50.897 : WARN  : WARNING 2 : Set ANPR preferences for camera:Subsuelo 2
+18/05/18 22:09:51.444 : INFO  : OK : Add camera : Id = 2 : Name = Subsuelo 2 : Location = LOCATION : Url = RTSP://admin:Fx2345678@192.168.1.11:554/Streaming/Channels/101?transportmode=unicast&profile=Profile_1&sound=True
+18/05/18 22:09:51.459 : WARN  : WARNING 2 : Set detection preferences for camera:Subsuelo 1 : Read Always=True : Motion=False : Trigger=False
+18/05/18 22:09:51.803 : WARN  : WARNING 2 : Set ANPR preferences for camera:Subsuelo 1
+18/05/18 22:09:51.819 : INFO  : OK : Add camera : Id = 1 : Name = Subsuelo 1 : Location = LOCATION : Url = RTSP://admin:Fx2345678@192.168.1.12:554/Streaming/Channels/101?transportmode=unicast&profile=Profile_1&sound=True
+18/05/18 22:09:52.131 : INFO  : OK : Created location group ...LOCATION
+18/05/18 22:09:52.147 : INFO  : OK : Camera Subsuelo 2 Joined location group ...LOCATION
+18/05/18 22:09:52.163 : INFO  : OK : Camera Subsuelo 1 Joined location group ...LOCATION
+18/05/18 22:09:52.163 : INFO  : OK : Loaded Cameras ...
+18/05/18 22:09:52.178 : INFO  : OK : Unloaded Thread_Load_Cameras.
+18/05/18 22:09:52.178 : INFO  : OK : Try to IO modules ...
+18/05/18 22:09:52.241 : INFO  : OK : Starting Async socket listen for port : 8040
+18/05/18 22:09:52.241 : INFO  : OK : Starting Async socket listen wait for port : 8051
+18/05/18 22:09:52.256 : INFO  : OK : Started Thread_ShowGeneralInfo 
+18/05/18 22:09:52.256 : WARN  : WARNING 3 : NEXT ID XML 0
+18/05/18 22:09:52.272 : INFO  : OK : Started Thread_Send_Results.
+18/05/18 22:09:52.272 : INFO  : OK : Wait VPAR to start, step 2.
+18/05/18 22:09:52.288 : INFO  : OK : Wait VPAR to start, step 2.
+18/05/18 22:09:52.288 : INFO  : OK : Wait VPAR to start.
+18/05/18 22:09:52.303 : WARN  : WARNING 1 : Waiting for connection...port : 8040
+18/05/18 22:09:52.303 : WARN  : WARNING 1 : Waiting for connection...port : 8051
+18/05/18 22:09:52.288 : INFO  : OK : Starting VPAR ... 
+18/05/18 22:09:52.272 : INFO  : OK : Started Heartbeat.
+18/05/18 22:09:52.288 : INFO  : OK : Started camera status reporting.
+18/05/18 22:09:54.647 : INFO  : OK : Started VPAR ... Country CODE : 201
+18/05/18 22:09:54.647 : INFO  : OK : Started VPAR ... Country CODE : 203
+18/05/18 22:09:54.647 : INFO  : OK : Started VPAR ... Country CODE : 204
+18/05/18 22:09:54.663 : INFO  : OK : Started VPAR ... Country CODE : 208
+18/05/18 22:09:54.663 : INFO  : OK : Started VPAR ... Country CODE : 211
+18/05/18 22:09:54.663 : WARN  : WARNING 1 : Creating process ... 0
+18/05/18 22:09:54.678 : INFO  : OK : Started sending results to VPAR.
+18/05/18 22:09:54.678 : INFO  : OK : Started training engine sender.
+18/05/18 22:09:54.678 : INFO  : OK : Started training engine sender.
+18/05/18 22:09:54.678 : WARN  : WARNING 1 : Creating process ... 1
+18/05/18 22:09:54.694 : WARN  : WARNING 1 : Creating process ... 2
+18/05/18 22:09:54.709 : WARN  : WARNING 1 : Creating process ... 3
+18/05/18 22:09:54.725 : WARN  : WARNING 1 : Creating process ... 4
+18/05/18 22:09:54.741 : WARN  : WARNING 1 : Creating process ... 5
+18/05/18 22:09:54.741 : WARN  : WARNING 1 : Creating process ... 6
+18/05/18 22:09:54.756 : WARN  : WARNING 1 : Creating process ... 7
+18/05/18 22:09:54.756 : WARN  : WARNING 1 : Creating process ... 8
+18/05/18 22:09:54.772 : WARN  : WARNING 1 : Creating process ... 9
+18/05/18 22:09:54.772 : WARN  : WARNING 1 : Creating process ... 10
+18/05/18 22:09:54.788 : WARN  : WARNING 1 : Creating process ... 11
+18/05/18 22:09:54.788 : WARN  : WARNING 1 : Creating process ... 12
+18/05/18 22:09:54.788 : WARN  : WARNING 1 : Creating process ... 13
+18/05/18 22:09:54.803 : WARN  : WARNING 1 : Creating process ... 14
+18/05/18 22:09:54.819 : WARN  : WARNING 1 : Creating process ... 15
+18/05/18 22:09:54.819 : WARN  : WARNING 1 : Creating process ... 16
+18/05/18 22:09:54.819 : WARN  : WARNING 1 : Creating process ... 17
+18/05/18 22:09:54.834 : WARN  : WARNING 1 : Creating process ... 18
+18/05/18 22:09:54.834 : WARN  : WARNING 1 : Creating process ... 19
+18/05/18 22:09:54.834 : WARN  : WARNING 1 : Creating process ... 20
+18/05/18 22:09:54.850 : INFO  : OK : Try to start Cameras ...
+18/05/18 22:09:54.913 : INFO  : OK : Try to Start camera : Subsuelo 2
+18/05/18 22:10:00.792 : INFO  : OK : Camera : Subsuelo 2 : Started RTSP Stream
+18/05/18 22:10:00.802 : INFO  : OK : Try to Start camera : Subsuelo 1
+18/05/18 22:10:00.872 : INFO  : OK : Camera : Subsuelo 1 : Started RTSP Stream
+18/05/18 22:10:00.877 : INFO  : OK : Started Cameras.
+18/05/18 22:10:00.887 : INFO  : OK : Started Main Subsystems.
+18/05/18 22:16:33.100 : WARN  : WARNING 2 : Cam:1 Plate : SBD76 Filtered. Reason : Filter min num chars plate not passed. Value: 5
+18/05/18 22:16:34.796 : INFO  : OK : Read License Plate : SBU7650 ( Uruguay) ) Confidence : 96,81, Character height : 35,17 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: -1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 1 
+18/05/18 22:16:35.501 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SBU7650
+18/05/18 22:16:36.036 : WARN  : WARNING 2 : Cam:1 Plate : SBU7650 Filtered. Reason : Filter timeout plate not passed.
+18/05/18 22:16:39.662 : WARN  : WARNING 2 : Cam:1 Plate : SBU7650 Filtered. Reason : Min character height not passed. Value: 27,54545
+18/05/18 22:16:40.182 : WARN  : WARNING 2 : Cam:1 Plate : SBU7650 Filtered. Reason : Min character height not passed. Value: 27,33333
+18/05/18 22:16:40.627 : WARN  : WARNING 2 : Cam:1 Plate : SBU7650 Filtered. Reason : Min character height not passed. Value: 27,125
+18/05/18 22:16:40.852 : WARN  : WARNING 2 : Cam:1 Plate : SBU7650 Filtered. Reason : Min character height not passed. Value: 25,25
+18/05/18 22:16:41.227 : WARN  : WARNING 2 : Cam:1 Plate : SBU7650 Filtered. Reason : Min character height not passed. Value: 24,42857
+18/05/18 22:16:41.612 : WARN  : WARNING 2 : Cam:1 Plate : SBU7650 Filtered. Reason : Filter timeout plate not passed.
+18/05/18 22:36:51.175 : WARN  : WARNING 2 : Cam:1 Plate : SBS2213 Filtered. Reason : Min character height not passed. Value: 23
+18/05/18 22:36:51.290 : WARN  : WARNING 2 : Cam:1 Plate : SBS2213 Filtered. Reason : Min character height not passed. Value: 22,85714
+18/05/18 22:36:51.395 : WARN  : WARNING 2 : Cam:1 Plate : SBS2213 Filtered. Reason : Min character height not passed. Value: 23,28572
+18/05/18 22:36:51.565 : WARN  : WARNING 2 : Cam:1 Plate : SBS2213 Filtered. Reason : Min character height not passed. Value: 24
+18/05/18 22:36:51.810 : WARN  : WARNING 2 : Cam:1 Plate : SBS2213 Filtered. Reason : Min character height not passed. Value: 24,28572
+18/05/18 22:36:52.055 : WARN  : WARNING 2 : Cam:1 Plate : SBS2213 Filtered. Reason : Min character height not passed. Value: 25,14286
+18/05/18 22:36:52.210 : WARN  : WARNING 2 : Cam:1 Plate : SBS2213 Filtered. Reason : Min character height not passed. Value: 25,14286
+18/05/18 22:36:52.435 : WARN  : WARNING 2 : Cam:1 Plate : SBS2213 Filtered. Reason : Min character height not passed. Value: 25,83333
+18/05/18 22:36:52.575 : WARN  : WARNING 2 : Cam:1 Plate : SBS2213 Filtered. Reason : Min character height not passed. Value: 26,33333
+18/05/18 22:36:52.795 : WARN  : WARNING 2 : Cam:1 Plate : SBS2213 Filtered. Reason : Min character height not passed. Value: 26,75
+18/05/18 22:36:54.251 : INFO  : OK : Read License Plate : SBS2213 ( Uruguay) ) Confidence : 99,55, Character height : 35,38 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: 1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 1 
+18/05/18 22:36:54.366 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SBS2213
+18/05/18 22:36:55.086 : WARN  : WARNING 2 : Cam:1 Plate : SBS2213 Filtered. Reason : Filter timeout plate not passed.
+18/05/18 22:42:17.535 : WARN  : WARNING 2 : Cam:2 Plate : SAX8744 Filtered. Reason : Min character height not passed. Value: 27,6
+18/05/18 22:42:17.625 : WARN  : WARNING 2 : Cam:2 Plate : SAX8744 Filtered. Reason : Min character height not passed. Value: 27,16667
+18/05/18 22:43:26.218 : WARN  : WARNING 2 : Cam:1 Plate : SUU7650 Filtered. Reason : Min character height not passed. Value: 22,85714
+18/05/18 22:43:26.348 : WARN  : WARNING 2 : Cam:1 Plate : SUU7650 Filtered. Reason : Min character height not passed. Value: 23,28572
+18/05/18 22:43:26.468 : WARN  : WARNING 2 : Cam:1 Plate : SDU7650 Filtered. Reason : Min character height not passed. Value: 22,33333
+18/05/18 22:43:26.578 : WARN  : WARNING 2 : Cam:1 Plate : SBU7650 Filtered. Reason : Min character height not passed. Value: 23,28572
+18/05/18 22:43:26.684 : WARN  : WARNING 2 : Cam:1 Plate : SBU7650 Filtered. Reason : Min character height not passed. Value: 24,25
+18/05/18 22:43:26.809 : WARN  : WARNING 2 : Cam:1 Plate : SBU7650 Filtered. Reason : Min character height not passed. Value: 24,25
+18/05/18 22:43:27.534 : WARN  : WARNING 2 : Cam:1 Plate : SBU7650 Filtered. Reason : Min character height not passed. Value: 24
+18/05/18 22:43:28.109 : WARN  : WARNING 2 : Cam:1 Plate : SBU765 Filtered. Reason : Min character height not passed. Value: 25
+18/05/18 22:43:28.319 : WARN  : WARNING 2 : Cam:1 Plate : SBU7650 Filtered. Reason : Min character height not passed. Value: 25,4
+18/05/18 22:43:29.204 : WARN  : WARNING 2 : Cam:1 Plate : SBU7650 Filtered. Reason : Min character height not passed. Value: 28,33333
+18/05/18 22:43:29.394 : WARN  : WARNING 2 : Cam:1 Plate : SBU7650 Filtered. Reason : Min character height not passed. Value: 28,8
+18/05/18 22:43:31.004 : WARN  : WARNING 2 : Cam:1 Plate : SBD76 Filtered. Reason : Filter min num chars plate not passed. Value: 5
+18/05/18 22:43:31.249 : INFO  : OK : Read License Plate : SBU7650 ( Uruguay) ) Confidence : 99,90, Character height : 32,57 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: 0 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 1 
+18/05/18 22:43:31.304 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SBU7650

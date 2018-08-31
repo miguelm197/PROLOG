@@ -9,7 +9,7 @@ var lecturas = [];
 
 
 exports.getLecturas = function (req, res) {
-  
+
   res.status(200).jsonp(lecturas);
 }
 
@@ -44,7 +44,7 @@ exports.getLecturaPorId = function (req, res) {
   let paramId = req.query.id;
 
   for (const lectura of lecturas) {
-    if (lectura.id == paramId){
+    if (lectura.id == paramId) {
       objLectura = lectura;
       break;
     }
@@ -59,7 +59,7 @@ exports.getFiltrosPorLecturaId = function (req, res) {
   let paramId = req.query.id;
 
   for (const lectura of lecturas) {
-    if (lectura.id == paramId && lectura.filtros){
+    if (lectura.id == paramId && lectura.filtros) {
       colFiltros = lectura.filtros;
       break;
     }
@@ -67,6 +67,33 @@ exports.getFiltrosPorLecturaId = function (req, res) {
   res.status(200).jsonp(colFiltros);
 }
 
+
+
+exports.getCantidadLecturasLeidas = function (req, res) {
+  let colLecturas = [];
+  for (const lectura of lecturas) {
+    if (lectura.readPlate) {
+      colLecturas.push(lectura)
+    }
+  }
+  let cantLecturas = {
+    "cantidadLecturas": colLecturas.length
+  };
+  res.status(200).jsonp(cantLecturas);
+}
+
+exports.getCantidadLecturasNoLeidas = function (req, res) {
+  let colLecturas = [];
+  for (const lectura of lecturas) {
+    if (!lectura.readPlate) {
+      colLecturas.push(lectura)
+    }
+  }
+  let cantLecturas = {
+    "cantidadLecturas": colLecturas.length
+  };
+  res.status(200).jsonp(cantLecturas);
+}
 
 
 

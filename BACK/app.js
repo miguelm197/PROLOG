@@ -62,6 +62,12 @@ router.route("/getLecturaPorId")
 router.route("/getFiltrosPorLecturaId")
 .get(CtrlLectura.getFiltrosPorLecturaId)
 
+router.route("/getCantidadLecturasLeidas")
+.get(CtrlLectura.getCantidadLecturasLeidas)
+
+router.route("/getCantidadLecturasNoLeidas")
+.get(CtrlLectura.getCantidadLecturasNoLeidas)
+
 
 
 

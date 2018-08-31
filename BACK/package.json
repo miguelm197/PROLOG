@@ -2,10 +2,15 @@
   "name": "api-logs",
   "version": "1.0.0",
   "dependencies": {
-    "mongoose": "^4.1.11",
-    "express": "^4.7.1",
-    "method-override": "^2.1.2",
     "body-parser": "^1.5.1",
-    "mongodb": "^2.2.12"
+    "connect-multiparty": "^2.1.1",
+    "express": "^4.7.1",
+    "express-fileupload": "^0.4.0",
+    "express-formidable": "^1.0.0",
+    "formidable": "^1.2.1",
+    "method-override": "^2.1.2",
+    "moment": "^2.22.2",
+    "mongodb": "^2.2.12",
+    "mongoose": "^4.1.11"
   }
 }

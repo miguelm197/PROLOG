@@ -1,0 +1,4 @@
+24/05/18 19:38:38.530 : WARN  : WARNING 2 : Cam:1 Plate : B141520 Filtered. Reason : Filter min confidence plate not passed. Value: 72,89845
+24/05/18 19:38:39.915 : WARN  : WARNING 2 : Cam:1 Plate : 141SZO Filtered. Reason : Min character height not passed. Value: 18
+24/05/18 19:38:40.530 : WARN  : WARNING 2 : Cam:1 Plate : B141520 Filtered. Reason : Filter min confidence plate not passed. Value: 72,89845
+24/05/18 19:38:42.530 : WARN  : WARNING 2 : Cam:1 Plate : 141SZO Filtered. Reason : Filter min confidence plate not passed. Value: 72,89845

@@ -1,0 +1,5 @@
+24/05/18 19:24:52.116 : WARN  : WARNING 2 : Cam:1 Plate : FRD6945 Filtered. Reason : Max character height not passed. Value: 31,71428
+24/05/18 19:24:52.223 : WARN  : WARNING 2 : Cam:1 Plate : FRD6945 Filtered. Reason : Max character height not passed. Value: 30,28572
+24/05/18 19:24:52.378 : WARN  : WARNING 2 : Cam:1 Plate : FRD6945 Filtered. Reason : Max character height not passed. Value: 28,71428
+24/05/18 19:24:53.016 : INFO  : OK : Read License Plate : HOL1234 ( Uruguay) ) Confidence : 91,62, Character height : 27,00 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: -1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Camera 1 
+24/05/18 19:24:53.377 : WARN  : WARNING 3: SEND EVENT READ PLATE :  HOL1234

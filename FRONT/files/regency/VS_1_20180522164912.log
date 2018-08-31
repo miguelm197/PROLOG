@@ -1,0 +1,7 @@
+22/05/18 16:49:12.921 : INFO  : OK : Created new logfile: c:\tmp\logs\20180522\VS_1_20180522164912.log
+22/05/18 16:49:14.077 : INFO  : OK : INIT FFMPEG DRIVERS
+22/05/18 16:49:14.103 : INFO  : OK : load lang
+22/05/18 16:49:14.130 : INFO  : OK : ReadLanguage : C:\Program Files\Neural Labs\Neural Labs VPAR Server x64\Release\LANGUAGES\ENGLISH\LANG.TXT
+22/05/18 16:49:14.132 : INFO  : OK : Load LIGHT RLC
+22/05/18 16:49:14.136 : INFO  : OK :CHEKING SECURITY
+22/05/18 16:49:14.136 : INFO  : OK : Checking names

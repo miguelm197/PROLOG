@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Logs</title>
+    
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" type="text/css" href="./src/estilos/style.css">
+
+
+
+    <script type="text/javascript" src="./node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="./node_modules/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="./node_modules/angular-cookies/angular-cookies.min.js"></script>
+    <script type="text/javascript" src="./node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="./node_modules/moment/moment.js"></script>
+
+
+
+    <script src="app.js"></script>
+    <script src="./src/js/script.js"></script>
+
+
+
+
+
+    
+    <link rel="stylesheet" type="text/css" href="./src/nav/nav.css">
+    <script src="./src/nav/navCtrl.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./src/dashboard/dashboard.css">
+    <script src="./src/dashboard/dashboardCtrl.js"></script>
+    <script src="./src/dashboard/dashboardFact.js"></script>
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+    <!-- <div ng-include src="'src/nav/nav.html'"></div> -->
+    <!-- VISTAS PARCIALES-->
+    <div ng-view></div>
+
+
+
+
+
+<!-- 
+ <form action="http://localhost:3000/upload" method='POST' enctype='multipart/form-data'>
+    <input type="file" name='archivo' >
+    <input type="submit" value='Subir'>
+ </form>
+ -->
+
+</body>
+
+</html>

@@ -1,0 +1,240 @@
+26/05/18 14:48:48.755 : INFO  : OK : Created new logfile: c:\tmp\20180526\VS_1_20180526144848.log
+26/05/18 14:48:52.161 : INFO  : OK : INIT FFMPEG DRIVERS
+26/05/18 14:48:52.442 : INFO  : OK : load lang
+26/05/18 14:48:52.520 : INFO  : OK : ReadLanguage : C:\Program Files\Neural Labs\Neural Labs VPAR Server x64 2\Release\LANGUAGES\ENGLISH\LANG.TXT
+26/05/18 14:48:52.520 : INFO  : OK : Load LIGHT RLC
+26/05/18 14:48:52.552 : INFO  : OK :CHEKING SECURITY
+26/05/18 14:48:52.552 : INFO  : OK : Checking names
+26/05/18 14:48:53.567 : INFO  : OK : Waiting for initialization : 10 Seconds. Press ESC to bypass
+26/05/18 14:49:03.599 : INFO  : OK : CHEKING FEATURE
+26/05/18 14:49:11.036 : INFO  : OK : Feature loaded 10
+26/05/18 14:49:11.099 : INFO  : OK : Loading window  conection form
+26/05/18 14:49:11.177 : INFO  : OK : 0
+26/05/18 14:49:11.224 : INFO  : OK : ReadLanguage : C:\Program Files\Neural Labs\Neural Labs VPAR Server x64 2\Release\LANGUAGES\ENGLISH\LANG.TXT
+26/05/18 14:49:11.224 : INFO  : OK : 1
+26/05/18 14:49:11.989 : INFO  : OK : Connection Test OK
+26/05/18 14:49:12.067 : INFO  : OK : CHECK COUNTRIES VPAR DLL
+26/05/18 14:49:26.239 : INFO  : OK : LOAD COUNTRIES VPAR DLL
+26/05/18 14:49:26.255 : INFO  : OK : CHECK CONFIGURATION VPS Instance
+26/05/18 14:49:27.021 : INFO  : OK : LOAD CONFIGURATION VPS Instance
+26/05/18 14:49:27.146 : ERROR : ERROR : URL parse failed! error: Object reference not set to an instance of an object.
+26/05/18 14:49:27.177 : INFO  : OK : LoadConfiguration : C:\Program Files\Neural Labs\Neural Labs VPAR Server x64 2\Release\LANGUAGES\ENGLISH\LANG.TXT
+26/05/18 14:49:27.193 : INFO  : OK : ButtonSaveConfiguration.
+26/05/18 14:49:28.505 : INFO  : OK : SaveConfiguration : C:\Program Files\Neural Labs\Neural Labs VPAR Server x64 2\Release\OPTIONS\DEFAULT\CONFIGURATION.TXT
+26/05/18 14:49:29.114 : INFO  : OK : CHECK COUNTRY
+26/05/18 14:49:29.130 : INFO  : OK : LOAD REGION AND COUNTRY
+26/05/18 14:49:29.724 : INFO  : OK : LoadConfiguration : C:\Program Files\Neural Labs\Neural Labs VPAR Server x64 2\Release\LANGUAGES\ENGLISH\LANG.TXT
+26/05/18 14:49:29.786 : INFO  : OK : Started thread_Start_Subsystems 
+26/05/18 14:49:29.802 : WARN  : WARNING 2 : Using IP Address : 127.0.0.1
+26/05/18 14:49:29.802 : INFO  : OK : Using IP Address : 127.0.0.1
+26/05/18 14:49:29.833 : INFO  : OK : Try to connect to database...
+26/05/18 14:49:29.958 : INFO  : OK : Try to connect to database ... Done.
+26/05/18 14:49:29.974 : INFO  : OK : Try to register ...
+26/05/18 14:49:29.974 : INFO  : OK : Try to register ... Done.
+26/05/18 14:49:32.880 : INFO  : OK : Analitycs engine init OK
+26/05/18 14:49:33.490 : INFO  : OK : Try to load Cameras ...
+26/05/18 14:49:35.474 : WARN  : WARNING 2 : Set detection preferences for camera:Subsuelo 2 : Read Always=True : Motion=False : Trigger=False
+26/05/18 14:49:35.474 : WARN  : WARNING 2 : Set ANPR preferences for camera:Subsuelo 2
+26/05/18 14:49:35.599 : INFO  : OK : Add camera : Id = 2 : Name = Subsuelo 2 : Location = LOCATION : Url = RTSP://admin:Fx2345678@192.168.1.11:554/Streaming/Channels/101?transportmode=unicast&profile=Profile_1&sound=True
+26/05/18 14:49:35.615 : WARN  : WARNING 2 : Set detection preferences for camera:Subsuelo 1 : Read Always=True : Motion=False : Trigger=False
+26/05/18 14:49:35.615 : WARN  : WARNING 2 : Set ANPR preferences for camera:Subsuelo 1
+26/05/18 14:49:35.630 : INFO  : OK : Add camera : Id = 1 : Name = Subsuelo 1 : Location = LOCATION : Url = RTSP://admin:Fx2345678@192.168.1.12:554/Streaming/Channels/101?transportmode=unicast&profile=Profile_1&sound=True
+26/05/18 14:49:35.708 : INFO  : OK : Created location group ...LOCATION
+26/05/18 14:49:35.724 : INFO  : OK : Camera Subsuelo 2 Joined location group ...LOCATION
+26/05/18 14:49:35.724 : INFO  : OK : Camera Subsuelo 1 Joined location group ...LOCATION
+26/05/18 14:49:35.740 : INFO  : OK : Loaded Cameras ...
+26/05/18 14:49:35.740 : INFO  : OK : Unloaded Thread_Load_Cameras.
+26/05/18 14:49:35.755 : INFO  : OK : Try to IO modules ...
+26/05/18 14:49:35.771 : INFO  : OK : Starting Async socket listen for port : 8040
+26/05/18 14:49:35.771 : WARN  : WARNING 1 : Waiting for connection...port : 8040
+26/05/18 14:49:35.786 : INFO  : OK : Starting Async socket listen wait for port : 8051
+26/05/18 14:49:35.786 : WARN  : WARNING 1 : Waiting for connection...port : 8051
+26/05/18 14:49:35.802 : INFO  : OK : Started Thread_Send_Results.
+26/05/18 14:49:35.818 : INFO  : OK : Wait VPAR to start, step 2.
+26/05/18 14:49:35.802 : INFO  : OK : Started Thread_ShowGeneralInfo 
+26/05/18 14:49:35.802 : WARN  : WARNING 3 : NEXT ID XML 0
+26/05/18 14:49:35.818 : INFO  : OK : Started Heartbeat.
+26/05/18 14:49:35.818 : INFO  : OK : Started camera status reporting.
+26/05/18 14:49:35.833 : INFO  : OK : Wait VPAR to start, step 2.
+26/05/18 14:49:35.833 : INFO  : OK : Wait VPAR to start.
+26/05/18 14:49:35.849 : INFO  : OK : Starting VPAR ... 
+26/05/18 14:49:37.786 : INFO  : OK : Started VPAR ... Country CODE : 201
+26/05/18 14:49:37.802 : INFO  : OK : Started VPAR ... Country CODE : 203
+26/05/18 14:49:37.802 : INFO  : OK : Started VPAR ... Country CODE : 204
+26/05/18 14:49:37.818 : INFO  : OK : Started VPAR ... Country CODE : 208
+26/05/18 14:49:37.818 : INFO  : OK : Started VPAR ... Country CODE : 211
+26/05/18 14:49:37.833 : INFO  : OK : Started training engine sender.
+26/05/18 14:49:37.833 : INFO  : OK : Started training engine sender.
+26/05/18 14:49:37.833 : INFO  : OK : Started sending results to VPAR.
+26/05/18 14:49:37.833 : WARN  : WARNING 1 : Creating process ... 0
+26/05/18 14:49:37.849 : WARN  : WARNING 1 : Creating process ... 1
+26/05/18 14:49:37.865 : WARN  : WARNING 1 : Creating process ... 2
+26/05/18 14:49:37.880 : WARN  : WARNING 1 : Creating process ... 3
+26/05/18 14:49:37.880 : WARN  : WARNING 1 : Creating process ... 4
+26/05/18 14:49:37.896 : WARN  : WARNING 1 : Creating process ... 5
+26/05/18 14:49:37.896 : WARN  : WARNING 1 : Creating process ... 6
+26/05/18 14:49:37.911 : WARN  : WARNING 1 : Creating process ... 7
+26/05/18 14:49:37.927 : WARN  : WARNING 1 : Creating process ... 8
+26/05/18 14:49:37.927 : WARN  : WARNING 1 : Creating process ... 9
+26/05/18 14:49:37.943 : WARN  : WARNING 1 : Creating process ... 10
+26/05/18 14:49:37.943 : WARN  : WARNING 1 : Creating process ... 11
+26/05/18 14:49:37.958 : WARN  : WARNING 1 : Creating process ... 12
+26/05/18 14:49:37.974 : WARN  : WARNING 1 : Creating process ... 13
+26/05/18 14:49:37.974 : WARN  : WARNING 1 : Creating process ... 14
+26/05/18 14:49:37.974 : WARN  : WARNING 1 : Creating process ... 15
+26/05/18 14:49:37.990 : WARN  : WARNING 1 : Creating process ... 16
+26/05/18 14:49:37.990 : WARN  : WARNING 1 : Creating process ... 17
+26/05/18 14:49:38.005 : WARN  : WARNING 1 : Creating process ... 18
+26/05/18 14:49:38.005 : WARN  : WARNING 1 : Creating process ... 19
+26/05/18 14:49:38.021 : WARN  : WARNING 1 : Creating process ... 20
+26/05/18 14:49:38.036 : INFO  : OK : Try to start Cameras ...
+26/05/18 14:49:38.083 : INFO  : OK : Try to Start camera : Subsuelo 2
+26/05/18 14:49:40.024 : INFO  : OK : Camera : Subsuelo 2 : Started RTSP Stream
+26/05/18 14:49:40.034 : INFO  : OK : Try to Start camera : Subsuelo 1
+26/05/18 14:49:40.074 : INFO  : OK : Camera : Subsuelo 1 : Started RTSP Stream
+26/05/18 14:49:40.084 : INFO  : OK : Started Cameras.
+26/05/18 14:49:40.089 : INFO  : OK : Started Main Subsystems.
+26/05/18 15:03:25.112 : ERROR : ERROR : Arithmetic operation resulted in an overflow.
+26/05/18 15:06:34.977 : INFO  : OK : Read License Plate : SBY2707 ( Uruguay) ) Confidence : 91,74, Character height : 27,14 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: 1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 1 
+26/05/18 15:06:36.503 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SBY2707
+26/05/18 15:18:55.007 : INFO  : OK : Read License Plate : KMA8184 ( Uruguay) ) Confidence : 88,96, Character height : 37,50 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: -1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 1 
+26/05/18 15:18:55.212 : WARN  : WARNING 3: SEND EVENT READ PLATE :  KMA8184
+26/05/18 15:18:57.102 : WARN  : WARNING 2 : Cam:1 Plate : KMA8184 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 15:18:58.913 : WARN  : WARNING 2 : Cam:1 Plate : OMA8184 Filtered. Reason : Filter min confidence plate not passed. Value: 74,10822
+26/05/18 15:18:59.183 : WARN  : WARNING 2 : Cam:1 Plate : KMA8184 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 15:18:59.542 : WARN  : WARNING 2 : Cam:1 Plate : KMA8184 Filtered. Reason : Filter min confidence plate not passed. Value: 77,66122
+26/05/18 15:19:01.113 : WARN  : WARNING 2 : Cam:1 Plate : KMA8184 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 15:19:01.514 : WARN  : WARNING 2 : Cam:1 Plate : MA8184 Filtered. Reason : Filter min confidence plate not passed. Value: 77,74386
+26/05/18 15:19:03.148 : WARN  : WARNING 2 : Cam:1 Plate : KMA8184 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 15:19:03.383 : WARN  : WARNING 2 : Cam:1 Plate : FMA8184 Filtered. Reason : Filter min confidence plate not passed. Value: 76,66618
+26/05/18 15:19:05.289 : WARN  : WARNING 2 : Cam:1 Plate : KMA8184 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 15:19:06.900 : WARN  : WARNING 2 : Cam:1 Plate : QMA8184 Filtered. Reason : Filter min confidence plate not passed. Value: 72,76909
+26/05/18 15:19:07.690 : WARN  : WARNING 2 : Cam:1 Plate : KMA8184 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 15:19:07.881 : WARN  : WARNING 2 : Cam:1 Plate : IMA8184 Filtered. Reason : Filter min confidence plate not passed. Value: 76,76257
+26/05/18 15:19:08.867 : WARN  : WARNING 2 : Cam:1 Plate : KMA8184 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 15:19:09.926 : WARN  : WARNING 2 : Cam:1 Plate : KMA8184 Filtered. Reason : Min character height not passed. Value: 23,625
+26/05/18 15:19:10.243 : WARN  : WARNING 2 : Cam:1 Plate : KMA8184 Filtered. Reason : Min character height not passed. Value: 23,75
+26/05/18 15:19:12.375 : INFO  : OK : Read License Plate : KMA8184 ( Uruguay) ) Confidence : 89,07, Character height : 24,50 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: 0 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 1 
+26/05/18 15:19:12.453 : WARN  : WARNING 3: SEND EVENT READ PLATE :  KMA8184
+26/05/18 15:26:08.750 : INFO  : OK : Read License Plate : SCK3027 ( Uruguay) ) Confidence : 99,40, Character height : 26,43 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: 1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 2 
+26/05/18 15:26:08.960 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SCK3027
+26/05/18 15:26:10.390 : WARN  : WARNING 2 : Cam:2 Plate : SCK3027 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 15:26:12.626 : WARN  : WARNING 2 : Cam:2 Plate : SCK3027 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 15:29:21.763 : INFO  : OK : Read License Plate : SBL4457 ( Uruguay) ) Confidence : 99,90, Character height : 37,00 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: -1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 2 
+26/05/18 15:29:22.003 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SBL4457
+26/05/18 15:36:23.842 : INFO  : OK : Read License Plate : SBS7586 ( Uruguay) ) Confidence : 99,90, Character height : 36,43 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: -1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 1 
+26/05/18 15:36:24.042 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SBS7586
+26/05/18 15:36:25.157 : WARN  : WARNING 2 : Cam:1 Plate : SBS7586 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 15:37:54.329 : WARN  : WARNING 2 : Cam:1 Plate : IIDP49 Filtered. Reason : Filter min confidence plate not passed. Value: 45,06308
+26/05/18 15:37:56.880 : INFO  : OK : Read License Plate : SBJ4278 ( Uruguay) ) Confidence : 95,17, Character height : 49,29 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: -1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 2 
+26/05/18 15:37:57.045 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SBJ4278
+26/05/18 15:37:59.225 : WARN  : WARNING 2 : Cam:2 Plate : SBJ4278 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 15:41:55.877 : INFO  : OK : Read License Plate : SCA3046 ( Brazil) ) Confidence : 96,00, Character height : 30,71 ,Format: 203, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: -1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 1 
+26/05/18 15:41:56.012 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SCA3046
+26/05/18 15:41:56.847 : WARN  : WARNING 2 : Cam:1 Plate : SCA3046 Filtered. Reason : Min character height not passed. Value: 23,14286
+26/05/18 15:41:57.407 : WARN  : WARNING 2 : Cam:1 Plate : SCA3046 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 15:46:05.686 : WARN  : WARNING 2 : Cam:2 Plate : AAJ7832 Filtered. Reason : Max character height not passed. Value: 57,5
+26/05/18 15:46:08.387 : INFO  : OK : Read License Plate : AAJ7832 ( Uruguay) ) Confidence : 95,05, Character height : 40,50 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: -1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 2 
+26/05/18 15:46:08.507 : WARN  : WARNING 3: SEND EVENT READ PLATE :  AAJ7832
+26/05/18 16:17:19.291 : INFO  : OK : Read License Plate : NAU3074 ( Uruguay) ) Confidence : 86,85, Character height : 30,14 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: 1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 2 
+26/05/18 16:17:19.461 : WARN  : WARNING 3: SEND EVENT READ PLATE :  NAU3074
+26/05/18 16:17:20.556 : WARN  : WARNING 2 : Cam:2 Plate : NAU3074 Filtered. Reason : Filter min confidence plate not passed. Value: 74,13078
+26/05/18 16:17:21.776 : WARN  : WARNING 2 : Cam:2 Plate : NAU3074 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 16:20:36.735 : INFO  : OK : Read License Plate : LEA4407 ( Brazil) ) Confidence : 97,02, Character height : 27,86 ,Format: 203, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: 1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 2 
+26/05/18 16:20:36.905 : WARN  : WARNING 3: SEND EVENT READ PLATE :  LEA4407
+26/05/18 17:12:57.440 : INFO  : OK : Read License Plate : LEA4407 ( Uruguay) ) Confidence : 96,80, Character height : 38,86 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: 0 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 2 
+26/05/18 17:12:57.560 : WARN  : WARNING 3: SEND EVENT READ PLATE :  LEA4407
+26/05/18 17:29:34.071 : WARN  : WARNING 2 : Cam:2 Plate : SAL9651 Filtered. Reason : Filter min confidence plate not passed. Value: 60,24991
+26/05/18 17:29:35.782 : INFO  : OK : Read License Plate : SAL9651 ( Uruguay) ) Confidence : 93,81, Character height : 34,57 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: -1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 2 
+26/05/18 17:29:35.912 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SAL9651
+26/05/18 17:36:31.139 : INFO  : OK : Read License Plate : SBL4457 ( Uruguay) ) Confidence : 98,17, Character height : 28,75 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: 1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 2 
+26/05/18 17:36:31.254 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SBL4457
+26/05/18 17:36:32.649 : WARN  : WARNING 2 : Cam:2 Plate : SBL4457 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 18:21:54.966 : WARN  : WARNING 2 : Cam:1 Plate : MJB197 Filtered. Reason : Filter min confidence plate not passed. Value: 77,5909
+26/05/18 18:21:55.116 : WARN  : WARNING 2 : Cam:1 Plate : MJB997 Filtered. Reason : Filter min confidence plate not passed. Value: 76,21563
+26/05/18 18:21:55.656 : WARN  : WARNING 2 : Cam:1 Plate : MJB097 Filtered. Reason : Filter min confidence plate not passed. Value: 69,1739
+26/05/18 18:21:55.836 : WARN  : WARNING 2 : Cam:1 Plate : MJR997 Filtered. Reason : Filter min confidence plate not passed. Value: 76,40179
+26/05/18 18:21:56.166 : WARN  : WARNING 2 : Cam:1 Plate : MJB997 Filtered. Reason : Min character height not passed. Value: 22,28572
+26/05/18 18:21:56.516 : WARN  : WARNING 2 : Cam:1 Plate : MJB997 Filtered. Reason : Filter min confidence plate not passed. Value: 75,37145
+26/05/18 18:21:56.631 : WARN  : WARNING 2 : Cam:1 Plate : MJB997 Filtered. Reason : Min character height not passed. Value: 23,14286
+26/05/18 18:21:56.821 : WARN  : WARNING 2 : Cam:1 Plate : MJB997 Filtered. Reason : Min character height not passed. Value: 23,16667
+26/05/18 18:21:56.941 : WARN  : WARNING 2 : Cam:1 Plate : MJB997 Filtered. Reason : Min character height not passed. Value: 23,5
+26/05/18 18:21:57.066 : WARN  : WARNING 2 : Cam:1 Plate : MJB997 Filtered. Reason : Min character height not passed. Value: 23,5
+26/05/18 18:21:57.186 : WARN  : WARNING 2 : Cam:1 Plate : MJB997 Filtered. Reason : Min character height not passed. Value: 23,5
+26/05/18 18:21:57.466 : WARN  : WARNING 2 : Cam:1 Plate : MJB999 Filtered. Reason : Filter min confidence plate not passed. Value: 72,09483
+26/05/18 18:21:58.182 : WARN  : WARNING 2 : Cam:1 Plate : MJB999 Filtered. Reason : Filter min confidence plate not passed. Value: 74,05025
+26/05/18 18:21:58.482 : INFO  : OK : Read License Plate : MJB997 ( Argentina) ) Confidence : 91,69, Character height : 26,67 ,Format: 204, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: 1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 1 
+26/05/18 18:21:58.562 : WARN  : WARNING 3: SEND EVENT READ PLATE :  MJB997
+26/05/18 18:21:59.432 : WARN  : WARNING 2 : Cam:1 Plate : MJR999 Filtered. Reason : Filter min confidence plate not passed. Value: 73,59874
+26/05/18 18:22:00.202 : INFO  : OK : Read License Plate : MJB999 ( Argentina) ) Confidence : 83,84, Character height : 35,63 ,Format: 204, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: 1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 1 
+26/05/18 18:22:00.317 : WARN  : WARNING 3: SEND EVENT READ PLATE :  MJB999
+26/05/18 18:22:01.172 : WARN  : WARNING 2 : Cam:1 Plate : MJB999 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 18:40:49.140 : WARN  : WARNING 2 : Cam:1 Plate : SBB2635 Filtered. Reason : Min character height not passed. Value: 23
+26/05/18 18:40:49.575 : WARN  : WARNING 2 : Cam:1 Plate : SBB2635 Filtered. Reason : Min character height not passed. Value: 23,33333
+26/05/18 18:40:49.705 : WARN  : WARNING 2 : Cam:1 Plate : SBB2635 Filtered. Reason : Min character height not passed. Value: 23
+26/05/18 18:40:52.790 : WARN  : WARNING 2 : Cam:1 Plate : BB2635 Filtered. Reason : Min character height not passed. Value: 22
+26/05/18 18:40:53.041 : WARN  : WARNING 2 : Cam:1 Plate : BB2635 Filtered. Reason : Min character height not passed. Value: 22,75
+26/05/18 18:40:53.301 : INFO  : OK : Read License Plate : SBB2635 ( Uruguay) ) Confidence : 94,86, Character height : 26,00 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: 1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 1 
+26/05/18 18:40:53.446 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SBB2635
+26/05/18 18:40:54.466 : WARN  : WARNING 2 : Cam:1 Plate : SBB2635 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 18:40:56.056 : WARN  : WARNING 2 : Cam:1 Plate : SBB2635 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 18:41:55.658 : WARN  : WARNING 2 : Cam:1 Plate : SBB26 Filtered. Reason : Filter min num chars plate not passed. Value: 5
+26/05/18 18:41:56.388 : WARN  : WARNING 2 : Cam:1 Plate : SBB2635 Filtered. Reason : Filter min confidence plate not passed. Value: 76,99033
+26/05/18 18:41:57.328 : WARN  : WARNING 2 : Cam:1 Plate : SBB2635 Filtered. Reason : Min character height not passed. Value: 23
+26/05/18 18:41:57.933 : WARN  : WARNING 2 : Cam:1 Plate : SBB2635 Filtered. Reason : Filter min confidence plate not passed. Value: 65,6303
+26/05/18 18:41:58.163 : WARN  : WARNING 2 : Cam:1 Plate : SGB2635 Filtered. Reason : Filter min confidence plate not passed. Value: 60,91454
+26/05/18 18:41:58.573 : INFO  : OK : Read License Plate : SBB2635 ( Uruguay) ) Confidence : 84,28, Character height : 24,80 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: -1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 1 
+26/05/18 18:41:58.658 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SBB2635
+26/05/18 18:42:38.941 : INFO  : OK : Read License Plate : SBB2635 ( Uruguay) ) Confidence : 89,00, Character height : 26,00 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: 1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 2 
+26/05/18 18:42:39.382 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SBB2635
+26/05/18 18:42:40.377 : INFO  : OK : Read License Plate : SBB263 ( Uruguay) ) Confidence : 88,64, Character height : 29,71 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: 1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 2 
+26/05/18 18:42:40.422 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SBB263
+26/05/18 18:42:41.522 : WARN  : WARNING 2 : Cam:2 Plate : SBB263 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 18:42:43.282 : WARN  : WARNING 2 : Cam:2 Plate : SBB263 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 18:42:44.848 : WARN  : WARNING 2 : Cam:2 Plate : SBB263 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 18:42:46.368 : WARN  : WARNING 2 : Cam:2 Plate : SBB2635 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 19:01:26.399 : INFO  : OK : Read License Plate : LEA4407 ( Uruguay) ) Confidence : 97,37, Character height : 29,43 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: 1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 2 
+26/05/18 19:01:26.494 : WARN  : WARNING 3: SEND EVENT READ PLATE :  LEA4407
+26/05/18 19:03:04.173 : WARN  : WARNING 2 : Cam:1 Plate : SCJ2031 Filtered. Reason : Min character height not passed. Value: 23,46667
+26/05/18 19:03:04.963 : WARN  : WARNING 2 : Cam:1 Plate : SCJ2031 Filtered. Reason : Min character height not passed. Value: 22,28572
+26/05/18 19:03:05.103 : WARN  : WARNING 2 : Cam:1 Plate : SCJ2031 Filtered. Reason : Min character height not passed. Value: 22,42857
+26/05/18 19:03:05.228 : WARN  : WARNING 2 : Cam:1 Plate : SCJ2031 Filtered. Reason : Min character height not passed. Value: 21,85714
+26/05/18 19:03:05.423 : WARN  : WARNING 2 : Cam:1 Plate : SCJ2031 Filtered. Reason : Min character height not passed. Value: 21,42857
+26/05/18 19:03:06.139 : INFO  : OK : Read License Plate : SCJ2031 ( Uruguay) ) Confidence : 99,90, Character height : 26,14 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: -1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 1 
+26/05/18 19:03:06.254 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SCJ2031
+26/05/18 19:11:20.036 : INFO  : OK : Read License Plate : SBJ4278 ( Uruguay) ) Confidence : 91,29, Character height : 26,33 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: 1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 2 
+26/05/18 19:11:20.136 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SBJ4278
+26/05/18 19:11:21.211 : WARN  : WARNING 2 : Cam:2 Plate : SBJ4278 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 19:11:22.762 : WARN  : WARNING 2 : Cam:2 Plate : SBJ4278 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 19:17:05.989 : INFO  : OK : Read License Plate : SCJ7599 ( Uruguay) ) Confidence : 96,60, Character height : 36,50 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: -1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 2 
+26/05/18 19:17:06.159 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SCJ7599
+26/05/18 19:34:36.126 : INFO  : OK : Read License Plate : MAG5747 ( Brazil) ) Confidence : 93,23, Character height : 31,00 ,Format: 203, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: -1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 1 
+26/05/18 19:34:36.271 : WARN  : WARNING 3: SEND EVENT READ PLATE :  MAG5747
+26/05/18 19:34:37.382 : WARN  : WARNING 2 : Cam:1 Plate : MAG5747 Filtered. Reason : Min character height not passed. Value: 23,75
+26/05/18 19:34:38.147 : WARN  : WARNING 2 : Cam:1 Plate : MAG5747 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 19:35:12.869 : WARN  : WARNING 2 : Cam:2 Plate : SCJ682 Filtered. Reason : Min character height not passed. Value: 23,71428
+26/05/18 19:35:14.584 : INFO  : OK : Read License Plate : SCJ6823 ( Uruguay) ) Confidence : 99,46, Character height : 29,71 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: 1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 2 
+26/05/18 19:35:14.784 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SCJ6823
+26/05/18 19:35:15.779 : WARN  : WARNING 2 : Cam:2 Plate : SGU823 Filtered. Reason : Filter min confidence plate not passed. Value: 51,94368
+26/05/18 19:35:16.364 : WARN  : WARNING 2 : Cam:2 Plate : SCJ6823 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 20:13:17.669 : INFO  : OK : Read License Plate : SBU7650 ( Uruguay) ) Confidence : 95,64, Character height : 39,25 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: -1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 1 
+26/05/18 20:13:17.895 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SBU7650
+26/05/18 20:13:18.515 : WARN  : WARNING 2 : Cam:1 Plate : SBU7650 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 20:13:19.350 : WARN  : WARNING 2 : Cam:1 Plate : SBU7650 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 20:13:20.015 : WARN  : WARNING 2 : Cam:1 Plate : SBU7650 Filtered. Reason : Min character height not passed. Value: 23,57143
+26/05/18 20:13:20.740 : WARN  : WARNING 2 : Cam:1 Plate : SBU7650 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 20:22:14.090 : INFO  : OK : Read License Plate : AAF1017 ( Uruguay) ) Confidence : 98,09, Character height : 27,17 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: 0 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 2 
+26/05/18 20:22:14.510 : WARN  : WARNING 3: SEND EVENT READ PLATE :  AAF1017
+26/05/18 20:22:15.256 : WARN  : WARNING 2 : Cam:2 Plate : AAF1017 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 20:22:16.201 : WARN  : WARNING 2 : Cam:2 Plate : AAF1017 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 20:22:18.041 : WARN  : WARNING 2 : Cam:2 Plate : AAF1017 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 20:22:19.466 : WARN  : WARNING 2 : Cam:2 Plate : AAF1017 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 20:22:20.202 : WARN  : WARNING 2 : Cam:2 Plate : AAF1017 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 20:22:21.037 : WARN  : WARNING 2 : Cam:2 Plate : AAF1017 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 20:37:39.163 : WARN  : WARNING 2 : Cam:1 Plate : SBY271 Filtered. Reason : Filter min confidence plate not passed. Value: 69,96904
+26/05/18 20:37:39.858 : INFO  : OK : Read License Plate : SBY2707 ( Uruguay) ) Confidence : 86,50, Character height : 36,60 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: -1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Subsuelo 1 
+26/05/18 20:37:40.283 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SBY2707
+26/05/18 20:37:41.168 : WARN  : WARNING 2 : Cam:1 Plate : SBY2707 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 20:37:42.814 : WARN  : WARNING 2 : Cam:1 Plate : SBY2707 Filtered. Reason : Filter timeout plate not passed.
+26/05/18 20:37:43.499 : WARN  : WARNING 2 : Cam:1 Plate : SBY2707 Filtered. Reason : Min character height not passed. Value: 23,28572
+26/05/18 20:37:44.259 : WARN  : WARNING 2 : Cam:1 Plate : SBY2707 Filtered. Reason : Filter timeout plate not passed.

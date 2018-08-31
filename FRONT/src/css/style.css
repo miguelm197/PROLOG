@@ -1,0 +1,243 @@
+/* @import url('https://fonts.googleapis.com/css?family=Raleway:100,400,500');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700'); */
+
+.navbar {
+  background-color: black;
+  position: fixed !important;
+  width: 100%;
+  height: 50px;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+}
+body > .container-fluid {
+  padding-top: 80px;
+}
+.navbar ul {
+  margin: auto;
+}
+.navbar li {
+  background-color: white;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  width: 100px;
+  cursor: pointer;
+}
+/* ====================================================== */
+.izquierda {
+  position: absolute;
+  left: 0px;
+  width: 30%;
+}
+.derecha {
+  position: absolute;
+  right: 0px;
+  width: 70%;
+}
+
+.derecha .tabla thead tr {
+  width: calc(100% - 15px);
+}
+.derecha .tabla tr {
+  width: 100%;
+  display: inline-table;
+  table-layout: fixed;
+}
+
+.derecha .tabla table {
+  height: 600px;
+  display: -moz-groupbox;
+}
+.derecha .tabla thead {
+  padding-right: 10px;
+}
+.derecha .tabla tbody {
+  overflow-y: auto;
+  height: 550px;
+  width: 100%;
+  position: absolute;
+}
+table th{
+  position: relative;
+}
+
+table .id {
+  width: 70px;
+}
+table th .cantFiltros {
+  width: 120px;
+}
+table th .filtro {
+  width: 100%;
+}
+table th .checkRango input[type=checkbox]{
+  transform: scale(1.4);
+  cursor: pointer;
+}
+table th .checkRango {
+position: absolute;
+right: 13px;
+}
+table th .filtreable {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* TABLA MATRICULAS NO LEIDAS */
+.tableMatriculasNoLeidas tbody tr {
+  cursor: pointer;
+}
+.tableMatriculasNoLeidas table .filtro.rango {
+  width: calc(50% - 25px)
+}
+
+/* MODAL */
+.mmodal {
+  display: none;
+}
+.mmodal .fondo {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: black;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.mmodal .contenedor {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 80%;
+  min-width: 1300px;
+  height: 700px;
+  z-index: 10001;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.mmodal table {
+  width: 100%;
+  height: 300px;
+  display: -moz-groupbox;
+  position: relative;
+}
+
+.mmodal .contenedor tr {
+  width: 100%;
+
+  display: inline-table;
+  table-layout: fixed;
+}
+.mmodal .contenedor tbody {
+  overflow-y: scroll;
+  height: 550px;
+  width: calc(100% - 15px);
+
+  position: absolute;
+}
+
+.modalMatriculasNoLeidas .izquierda {
+  left: 0px;
+  width: 30%;
+  padding: 20px;
+}
+
+.modalMatriculasNoLeidas .izquierda > .titulo {
+  margin-bottom: 60px;
+  color: #545454;
+}
+.modalMatriculasNoLeidas .izquierda > .titulo .tit {
+  font-size: 25px;
+  display: inline;
+  margin-right: 9px;
+}
+.modalMatriculasNoLeidas .izquierda > .titulo .matricula {
+  font-size: 30px;
+  display: inline;
+  font-weight: bold;
+}
+.modalMatriculasNoLeidas .izquierda .topFiltros .titulo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #545454;
+}
+.modalMatriculasNoLeidas .izquierda .topFiltros .filtro {
+  padding: 5px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: gray;
+}
+.modalMatriculasNoLeidas .izquierda .topFiltros .filtro .texto {
+  width: 280px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+.modalMatriculasNoLeidas .izquierda .topFiltros .filtro > div {
+  display: inline-block;
+}
+
+.modalMatriculasNoLeidas .izquierda .topFiltros .filtro:hover {
+  color: black;
+}
+
+.modalMatriculasNoLeidas .izquierda .topFiltros .filtro .modalContext {
+  background-color: #f2f2f2;
+  position: absolute;
+  width: 300px;
+  padding: 20px;
+  margin-top: -20px;
+  margin-left: 10px;
+  z-index: 1000;
+  border-radius: 4px;
+  color: #545454;
+}
+
+.modalMatriculasNoLeidas .derecha {
+  padding-top: 30px;
+  width: 70%;
+  padding-right: 30px;
+}
+
+/* #########################################
+                 grafica
+    ######################################### */
+
+
+.grafica {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  margin: 0px 10px;
+}
+.grafica span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.grafica .porcentaje {
+  transform: translate(-50%, -80%);
+  font-size: 50px;
+}
+.grafica .titulo {
+  transform: translate(-50%, -1%);
+  font-size: 25px;
+}
+
+.grafica3 {
+    width: 400px;
+    height: 400px;
+  }
+  
+  
+  

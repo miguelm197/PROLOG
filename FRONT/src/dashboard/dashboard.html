@@ -1,5 +1,86 @@
+<div class="container dashboard">
+    <div class="row">
+
+        <!-- GRAFICA PRINCIPAL -->
+        <div class="col-7">
+            <div class="row caja">
+                <div class="grafica">
+                    <canvas id="myChart" class="graficaLecturas" width="650" height="258"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- INDICADORES -->
+        <div class="col-5">
+            <div class="row caja cajaIndicadores">
 
 
-<div class="container">
-    asf
+                <div class="col-12 indicador indicador-rango">
+                    <div class="izquierda">
+                        <span class="icono">
+                            <i class="far fa-calendar-alt"></i>
+                        </span>
+                    </div>
+                    <div class="derecha">
+
+                        <div class="arriba">
+                            <div class="fecha">
+                                <span>{{indicador.fechaInicio}}</span>
+                            </div>
+                            <span> - </span>
+                            <div class="fecha">
+                                <span>{{indicador.fechaFin}}</span>
+                            </div>
+                        </div>
+                        <div class="abajo">
+                            <span class="elemento">Rango de tiempo</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 indicador">
+                    <div class="izquierda">
+                        <span class="icono">
+                            <i class="fas fa-check"></i>
+                        </span>
+                    </div>
+                    <div class="derecha">
+                        <div class="arriba">
+                            <span class="valor">{{indicador.lecturasValidas}}</span>
+                        </div>
+                        <div class="abajo">
+                            <span class="elemento">Lecturas válidas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 indicador">
+                    <div class="izquierda">
+                        <span class="icono">
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </div>
+                    <div class="derecha">
+                        <div class="arriba">
+                            <span class="valor">{{indicador.lecturasFiltradas}}</span>
+                        </div>
+                        <div class="abajo">
+                            <span class="elemento">Lecturas filtradas</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+    </div>
 </div>

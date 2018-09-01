@@ -99,6 +99,41 @@ exports.getCantidadLecturasNoLeidas = function (req, res) {
 
 
 
+exports.getCantidadDeLecturasPorDia = function (req, res) {
+  let colLecturas = [];
+  var ultimaFecha = "01/01/1997";
+  for (const lectura of lecturas) {
+    if (lectura.readPlate) {
+      let fecha = lectura.fecha.format("DD/MM/YYYY");
+
+      let existeFecha = false;
+      colLecturas.forEach(element => {
+        if (element.fecha.format("DD/MM/YYYY") == fecha){
+          element.cantidad++;
+          existeFecha = true;
+        }
+      });
+      if(!existeFecha){
+        colLecturas.push({
+          fecha:lectura.fecha,
+          cantidad:1
+        })
+      }
+      
+    }
+  }
+  res.status(200).jsonp(colLecturas);
+}
+
+exports.getFechaInicioFinLecturas = function (req, res) {
+  let colFechas = new Object();
+
+  if (lecturas){
+    colFechas.fechaInicio = lecturas[0].fecha;
+    colFechas.fechaFin = lecturas[lecturas.length - 1].fecha;
+  }
+  res.status(200).jsonp(colFechas);
+}
 
 
 

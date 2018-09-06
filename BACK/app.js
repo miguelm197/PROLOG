@@ -50,6 +50,10 @@ router.route("/upload")
 router.route("/getLecturas")
 .get(CtrlLectura.getLecturas)
 
+router.route("/getFechaInicioFinLecturas")
+.get(CtrlLectura.getFechaInicioFinLecturas)
+
+
 router.route("/getLecturasLeidas")
 .get(CtrlLectura.getLecturasLeidas)
 
@@ -71,8 +75,9 @@ router.route("/getCantidadLecturasNoLeidas")
 router.route("/getCantidadDeLecturasPorDia")
 .get(CtrlLectura.getCantidadDeLecturasPorDia)
 
-router.route("/getFechaInicioFinLecturas")
-.get(CtrlLectura.getFechaInicioFinLecturas)
+router.route("/getCantidadFiltros")
+.get(CtrlLectura.getCantidadFiltros)
+
 
 
 

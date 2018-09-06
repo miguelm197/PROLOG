@@ -34,7 +34,7 @@ app.controller("dashboardCtrl", [
                     datasets: [{
                         data: dataGraf,
                         borderColor: "transparent",
-                        backgroundColor: "#47c062",
+                        backgroundColor: "#4bda98",
                         pointStyle: "line",
                         lineTension: 0
                     }]
@@ -65,11 +65,16 @@ app.controller("dashboardCtrl", [
                                 displayFormats: {
                                     day: "DD/MM"
                                 }
+                            },
+                            ticks: {
+                                display: false,
+                                min: 0
+                                // max: 120,
                             }
                         }],
                         yAxes: [{
                             gridLines: {
-                                display: true,
+                                display: false,
                                 color: "#f4f4f4"
                             },
 
@@ -83,5 +88,44 @@ app.controller("dashboardCtrl", [
                 }
             });
         });
+        dashboardFact.getCantidadFiltros().then(function (data) {
+            $scope.filtros = data.data;
+
+
+        })
+
+
+
+
+        var speedData = {
+            labels: ["0s", "10s", "20s", "30s", "40s", "50s", "60s"],
+            datasets: [{
+                label: "Car Speed",
+                data: [0, 59, 75, 20, 20, 55, 40],
+            }]
+        };
+
+        var chartOptions = {
+            legend: {
+                display: true,
+                position: 'top',
+                labels: {
+                    boxWidth: 80,
+                    fontColor: 'black'
+                }
+            }
+        };
+
+
+        let ctx = document.getElementById("graficaFiltros").getContext("2d");
+        var lineChart = new Chart(ctx, {
+            type: 'line',
+            data: speedData,
+            options: chartOptions
+        });
+
+
+
+
     }
 ]);

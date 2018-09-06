@@ -2,16 +2,19 @@
     <div class="row">
 
         <!-- GRAFICA PRINCIPAL -->
-        <div class="col-7">
-            <div class="row caja">
+        <div class="col-7 ">
+            <div class="row caja cajaGrafica">
+                <div class="cabezal">
+                    <span class="titulo">Lecturas diarias</span>
+                </div>
                 <div class="grafica">
-                    <canvas id="myChart" class="graficaLecturas" width="650" height="258"></canvas>
+                    <canvas id="myChart" class="graficaLecturas" width="665" height="200"></canvas>
                 </div>
             </div>
         </div>
 
         <!-- INDICADORES -->
-        <div class="col-5">
+        <div class="col-5 ">
             <div class="row caja cajaIndicadores">
 
 
@@ -80,7 +83,119 @@
             </div>
         </div>
 
+    </div>
+
+
+    <div class="row">
+        <!-- CONTEO FILTROS -->
+        <div class="col-4">
+            <div class="row caja cajaConteoFiltros">
+                <div class="col-12">
+
+                    <div class="titulo">
+                        <span class="principal">Filtros</span>
+                        <span class="subtitulo">Conteo de Filtros</span>
+                    </div>
+
+
+                    <div class="contenido">
+                        <div class="filtro" ng-repeat="filtro in filtros">
+                            <span class="nombre">{{filtro.filtro}}</span>
+                            <span class="valor">{{filtro.cantidad}}</span>
+                        </div>
+
+                    </div>
+
+                    <div class="masInformacion">
+                        <span>Ver más información</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- GRAFICA FILTROS -->
+        <div class="col-4">
+            <div class="row caja cajaGraficosFiltros">
+                <div class="col-12">
+
+                    <div class="grafica">
+                        <canvas id="graficaFiltros" class="graficaFiltros" width="665" height="200"></canvas>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- GRAFICA FILTROS -->
+        <div class="col-4">
+            <div class="row caja cajaGraficosFiltros">
+                <div class="col-12">
+
+                    <div class="grafica">
+                        <canvas id="graficaFiltros" class="graficaFiltros" width="665" height="200"></canvas>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
 
 
     </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="row caja cajaDatosFiltros">
+                <div class="col-12">
+
+                    <div class="row">
+                        <div class="col col-4">
+                            <span class="dato">Filter min confidence plate.</span>
+                            <span class="titulo">Filtro</span>
+                        </div>
+                        <div class="col col-1">
+                            <span class="dato">7054</span>
+                            <span class="titulo">Cantidad</span>
+                        </div>
+                        <div class="col col-1">
+                            <span class="dato">32.29</span>
+                            <span class="titulo">Min</span>
+                        </div>
+                        <div class="col col-1">
+                            <span class="dato">81.99</span>
+                            <span class="titulo">Max</span>
+                        </div>
+                        <div class="col col-3">
+                            <span class="dato">72.3</span>
+                            <span class="titulo">Promedio</span>
+                        </div>
+                     
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
 </div>

@@ -10,6 +10,7 @@ body {
 .dashboard .caja {
     background-color: #fff;
     margin: 0px;
+    margin-top: 30px;
 }
 
 .dashboard .cajaIndicadores {
@@ -31,6 +32,7 @@ body {
 
 .dashboard .cajaIndicadores .indicador .izquierda .icono {
     font-size: 40px;
+    color: #4bda98;
 }
 
 .dashboard .cajaIndicadores .indicador .derecha {
@@ -49,7 +51,6 @@ body {
 .dashboard .cajaIndicadores .indicador .derecha .abajo {
     font-weight: 200;
     font-size: 16px;
-    
 }
 
 .dashboard .cajaIndicadores .indicador-rango .fecha {
@@ -60,9 +61,99 @@ body {
 .dashboard .cajaIndicadores .indicador-rango .arriba>span {
     margin: 0px 15px;
 }
-.grafica{
-    margin-top: 20px;
+
+/* GRAFICA PRINCIPAL */
+.grafica {
+    padding-top: 31px;
+    margin-left: -10px;
+    margin-bottom: -10px;
 }
-.graficaLecturas{
+
+.graficaLecturas {
     width: 100%;
+}
+
+.cajaGrafica .cabezal {
+    padding: 12px;
+    padding-left: 20px;
+}
+
+.cajaGrafica .cabezal .titulo {
+    font-size: 22px;
+    font-weight: 200;
+    /*! color: dimgray; */
+}
+
+/* CONTEO FILTROS */
+.dashboard .cajaConteoFiltros {
+    padding: 20px 10px;
+}
+
+.dashboard .cajaConteoFiltros .titulo {
+    padding-bottom: 20px;
+}
+
+.dashboard .cajaConteoFiltros .titulo span {
+    display: block;
+}
+
+.dashboard .cajaConteoFiltros .titulo .principal {
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.dashboard .cajaConteoFiltros .titulo .subtitulo {
+    font-weight: 200;
+    color: gray;
+    margin-top: -5px;
+}
+
+.dashboard .cajaConteoFiltros .contenido .filtro {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.dashboard .cajaConteoFiltros .contenido .filtro .nombre {
+    font-weight: 200;
+    margin-top: 7px;
+    font-size: 14px;
+}
+
+.dashboard .cajaConteoFiltros .contenido .filtro .valor {
+    color: #4bda98;
+    font-weight: 200;
+    font-size: 17px;
+}
+
+.dashboard .cajaConteoFiltros .masInformacion {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.dashboard .cajaConteoFiltros .masInformacion span {
+    font-weight: 200;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
+
+/* DATOS FILTROS */
+.dashboard .cajaDatosFiltros{
+    padding: 20px 10px;
+}
+.dashboard .cajaDatosFiltros .col > *{
+    display: block;
+}
+
+.dashboard .cajaDatosFiltros .col .dato{
+    font-size: 17px;
+}
+
+
+.dashboard .cajaDatosFiltros .col .titulo{
+    font-size: 15px;
+    color: gray;
 }

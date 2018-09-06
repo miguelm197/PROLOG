@@ -14,6 +14,18 @@ exports.getLecturas = function (req, res) {
 }
 
 
+exports.getFechaInicioFinLecturas = function (req, res) {
+  let colFechas = new Object();
+
+  if (lecturas) {
+    colFechas.fechaInicio = lecturas[0].fecha;
+    colFechas.fechaFin = lecturas[lecturas.length - 1].fecha;
+  }
+  res.status(200).jsonp(colFechas);
+}
+
+
+
 
 exports.getLecturasLeidas = function (req, res) {
   let colLecturas = [];
@@ -108,32 +120,88 @@ exports.getCantidadDeLecturasPorDia = function (req, res) {
 
       let existeFecha = false;
       colLecturas.forEach(element => {
-        if (element.fecha.format("DD/MM/YYYY") == fecha){
+        if (element.fecha.format("DD/MM/YYYY") == fecha) {
           element.cantidad++;
           existeFecha = true;
         }
       });
-      if(!existeFecha){
+      if (!existeFecha) {
         colLecturas.push({
-          fecha:lectura.fecha,
-          cantidad:1
+          fecha: lectura.fecha,
+          cantidad: 1
         })
       }
-      
+
     }
   }
   res.status(200).jsonp(colLecturas);
 }
 
-exports.getFechaInicioFinLecturas = function (req, res) {
-  let colFechas = new Object();
 
-  if (lecturas){
-    colFechas.fechaInicio = lecturas[0].fecha;
-    colFechas.fechaFin = lecturas[lecturas.length - 1].fecha;
+exports.getCantidadFiltros = function (req, res) {
+  let colFiltros = [];
+
+  for (const lectura of lecturas) {
+    if (lectura.filtros) {
+
+      for (const filtroLectura of lectura.filtros) {
+        let existeFiltro = false;
+        for (const filtroCol of colFiltros) {
+          if (filtroCol.filtro == filtroLectura.filtro) {
+            filtroCol.cantidad++;
+            existeFiltro = true;
+            if (filtroLectura.valor) {
+              filtroCol.sumatoria = parseInt(filtroCol.sumatoria) + parseInt(filtroLectura.valor);
+              if (filtroLectura.valor < filtroCol.min) {
+                filtroCol.min = filtroLectura.valor;
+              } else if (filtroLectura.valor > filtroCol.max) {
+                filtroCol.max = filtroLectura.valor;
+              }
+            } else {
+              filtroCol.min = false;
+              filtroCol.max = false;
+              filtroCol.sumatoria = false;
+              filtroCol.promedio = false;
+            }
+
+            break;
+          }
+        }
+
+        if (!existeFiltro) {
+          colFiltros.push({
+            filtro: filtroLectura.filtro,
+            cantidad: 1,
+            sumatoria: 0,
+            min: 999999999,
+            max: 0,
+            promedio: 0
+          })
+        }
+
+
+      }
+
+    }
   }
-  res.status(200).jsonp(colFechas);
+
+
+  for (const filtro of colFiltros) {
+    if (filtro.promedio == 0) {
+      filtro.promedio = filtro.sumatoria / filtro.cantidad;
+    }
+  }
+
+  res.status(200).jsonp(colFiltros);
 }
+
+
+
+
+
+
+
+
 
 
 

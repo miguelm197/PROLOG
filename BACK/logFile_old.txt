@@ -1,0 +1,164 @@
+24/08/18 10:39:38.728 : INFO  : OK : Created new logfile: c:\tmp\logs\20180524\VS_1_20180524103938.log
+24/08/18 10:39:39.554 : INFO  : OK : INIT FFMPEG DRIVERS
+24/08/18 10:39:39.579 : INFO  : OK : load lang
+24/08/18 10:39:39.611 : INFO  : OK : ReadLanguage : C:\Program Files\Neural Labs\Neural Labs VPAR Server x64\Release\LANGUAGES\ENGLISH\LANG.TXT
+24/08/18 10:39:39.614 : INFO  : OK : Load LIGHT RLC
+24/08/18 10:39:39.615 : INFO  : OK :CHEKING SECURITY
+24/08/18 10:39:39.616 : INFO  : OK : Checking names
+24/08/18 10:39:39.659 : INFO  : OK : Waiting for initialization : 10 Seconds. Press ESC to bypass
+24/08/18 10:39:41.673 : INFO  : OK : CHEKING FEATURE
+24/08/18 10:39:42.635 : INFO  : OK : Feature loaded 10
+24/08/18 10:39:42.653 : INFO  : OK : Loading window  conection form
+24/08/18 10:39:42.667 : INFO  : OK : 0
+24/08/18 10:39:42.668 : INFO  : OK : ReadLanguage : C:\Program Files\Neural Labs\Neural Labs VPAR Server x64\Release\LANGUAGES\ENGLISH\LANG.TXT
+24/08/18 10:39:42.668 : INFO  : OK : 1
+24/08/18 10:39:42.855 : INFO  : OK : Connection Test OK
+24/08/18 10:39:42.886 : INFO  : OK : CHECK COUNTRIES VPAR DLL
+24/08/18 10:39:46.175 : INFO  : OK : LOAD COUNTRIES VPAR DLL
+24/08/18 10:39:46.176 : INFO  : OK : CHECK CONFIGURATION VPS Instance
+24/08/18 10:39:46.565 : INFO  : OK : LOAD CONFIGURATION VPS Instance
+24/08/18 10:39:46.589 : ERROR : ERROR : URL parse failed! error: Referencia a objeto no establecida como instancia de un objeto.
+24/08/18 10:39:46.605 : INFO  : OK : LoadConfiguration : C:\Program Files\Neural Labs\Neural Labs VPAR Server x64\Release\LANGUAGES\ENGLISH\LANG.TXT
+24/08/18 10:39:46.611 : INFO  : OK : ButtonSaveConfiguration.
+24/08/18 10:39:46.711 : INFO  : OK : SaveConfiguration : C:\Program Files\Neural Labs\Neural Labs VPAR Server x64\Release\OPTIONS\DEFAULT\CONFIGURATION.TXT
+24/08/18 10:39:46.973 : INFO  : OK : CHECK COUNTRY
+24/08/18 10:39:46.974 : INFO  : OK : LOAD REGION AND COUNTRY
+24/08/18 10:39:47.074 : INFO  : OK : LoadConfiguration : C:\Program Files\Neural Labs\Neural Labs VPAR Server x64\Release\LANGUAGES\ENGLISH\LANG.TXT
+24/08/18 10:39:47.092 : INFO  : OK : Started thread_Start_Subsystems 
+24/08/18 10:39:47.098 : WARN  : WARNING 2 : Using IP Address : 127.0.0.1
+24/08/18 10:39:47.098 : INFO  : OK : Using IP Address : 127.0.0.1
+24/08/18 10:39:47.099 : INFO  : OK : Try to connect to database...
+24/08/18 10:39:47.112 : INFO  : OK : Try to connect to database ... Done.
+24/08/18 10:39:47.112 : INFO  : OK : Try to register ...
+24/08/18 10:39:47.113 : INFO  : OK : Try to register ... Done.
+24/08/18 10:39:48.177 : INFO  : OK : Analitycs engine init OK
+24/08/18 10:39:48.292 : INFO  : OK : Try to load Cameras ...
+24/08/18 10:39:48.515 : WARN  : WARNING 2 : Set detection preferences for camera:Camera 1 : Read Always=False : Motion=True : Trigger=False
+24/08/18 10:39:48.515 : WARN  : WARNING 2 : Set ANPR preferences for camera:Camera 1
+24/08/18 10:39:48.553 : WARN  : WARNING 3 : Failed to init NL DIRECTION analytic:0
+24/08/18 10:39:48.554 : WARN  : WARNING 3 : Camera not calibrated
+24/08/18 10:39:48.595 : INFO  : OK : Add camera : Id = 1 : Name = Camera 1 : Location = LOCATION : Url = RTSP2://12.0.0.7:554/Streaming/Channels/101
+24/08/18 10:39:48.648 : INFO  : OK : Created location group ...LOCATION
+24/08/18 10:39:48.649 : INFO  : OK : Camera Camera 1 Joined location group ...LOCATION
+24/08/18 10:39:48.650 : INFO  : OK : Loaded Cameras ...
+24/08/18 10:39:48.650 : INFO  : OK : Unloaded Thread_Load_Cameras.
+24/08/18 10:39:48.657 : INFO  : OK : Try to IO modules ...
+24/08/18 10:39:48.667 : INFO  : OK : Starting Async socket listen for port : 8040
+24/08/18 10:39:48.668 : INFO  : OK : Starting Async socket listen wait for port : 8051
+24/08/18 10:39:48.669 : WARN  : WARNING 1 : Waiting for connection...port : 8040
+24/08/18 10:39:48.670 : WARN  : WARNING 1 : Waiting for connection...port : 8051
+24/08/18 10:39:48.672 : INFO  : OK : Started Thread_ShowGeneralInfo 
+24/08/18 10:39:48.680 : INFO  : OK : Wait VPAR to start, step 2.
+24/08/18 10:39:48.690 : INFO  : OK : Wait VPAR to start.
+24/08/18 10:39:48.695 : INFO  : OK : Started Heartbeat.
+24/08/18 10:39:48.696 : INFO  : OK : Started camera status reporting.
+24/08/18 10:39:48.697 : INFO  : OK : Wait VPAR to start, step 2.
+24/08/18 10:39:48.697 : INFO  : OK : Started Thread_Send_Results.
+24/08/18 10:39:48.698 : WARN  : WARNING 3 : NEXT ID XML 0
+24/08/18 10:39:48.714 : INFO  : OK : Starting VPAR ... 
+24/08/18 10:39:49.095 : INFO  : OK : Started VPAR ... Country CODE : 203
+24/08/18 10:39:49.096 : INFO  : OK : Started VPAR ... Country CODE : 204
+24/08/18 10:39:49.097 : INFO  : OK : Started VPAR ... Country CODE : 211
+24/08/18 10:39:49.098 : INFO  : OK : Started VPAR ... Country CODE : 216
+24/08/18 10:39:49.101 : WARN  : WARNING 1 : Creating process ... 0
+24/08/18 10:39:49.102 : INFO  : OK : Started training engine sender.
+24/08/18 10:39:49.104 : WARN  : WARNING 1 : Creating process ... 1
+24/08/18 10:39:49.105 : INFO  : OK : Started sending results to VPAR.
+24/08/18 10:39:49.105 : INFO  : OK : Started training engine sender.
+24/08/18 10:39:49.121 : WARN  : WARNING 1 : Creating process ... 2
+24/08/18 10:39:49.139 : WARN  : WARNING 1 : Creating process ... 3
+24/08/18 10:39:49.147 : WARN  : WARNING 1 : Creating process ... 4
+24/08/18 10:39:49.148 : WARN  : WARNING 1 : Creating process ... 5
+24/08/18 10:39:49.165 : WARN  : WARNING 1 : Creating process ... 6
+24/08/18 10:39:49.172 : WARN  : WARNING 1 : Creating process ... 7
+24/08/18 10:39:49.173 : WARN  : WARNING 1 : Creating process ... 8
+24/08/18 10:39:49.184 : WARN  : WARNING 1 : Creating process ... 9
+24/08/18 10:39:49.185 : WARN  : WARNING 1 : Creating process ... 10
+24/08/18 10:39:49.186 : WARN  : WARNING 1 : Creating process ... 11
+24/08/18 10:39:49.187 : WARN  : WARNING 1 : Creating process ... 12
+24/08/18 10:39:49.187 : WARN  : WARNING 1 : Creating process ... 13
+24/08/18 10:39:49.188 : WARN  : WARNING 1 : Creating process ... 14
+24/08/18 10:39:49.189 : WARN  : WARNING 1 : Creating process ... 15
+24/08/18 10:39:49.189 : WARN  : WARNING 1 : Creating process ... 16
+24/08/18 10:39:49.190 : WARN  : WARNING 1 : Creating process ... 17
+24/08/18 10:39:49.191 : WARN  : WARNING 1 : Creating process ... 18
+24/08/18 10:39:49.192 : WARN  : WARNING 1 : Creating process ... 19
+24/08/18 10:39:49.192 : WARN  : WARNING 1 : Creating process ... 20
+24/08/18 10:39:49.199 : INFO  : OK : Try to start Cameras ...
+24/08/18 10:39:49.227 : INFO  : OK : Try to Start camera : Camera 1
+24/08/18 10:39:52.012 : INFO  : OK : Camera : Camera 1 : Started RTSP2 Stream
+24/08/18 10:39:52.013 : INFO  : OK : Started Cameras.
+24/08/18 10:39:52.014 : INFO  : OK : Started Main Subsystems.
+24/08/18 10:40:43.922 : WARN  : WARNING 2 : Cam:1 Plate : SBE6550 Filtered. Reason : Max character height not passed. Value: 42
+24/08/18 10:40:44.047 : WARN  : WARNING 2 : Cam:1 Plate : SBE6550 Filtered. Reason : Max character height not passed. Value: 36,83333
+24/08/18 10:40:44.184 : WARN  : WARNING 2 : Cam:1 Plate : SBE6550 Filtered. Reason : Max character height not passed. Value: 31,42857
+24/08/18 10:40:44.318 : WARN  : WARNING 2 : Cam:1 Plate : SBE6550 Filtered. Reason : Max character height not passed. Value: 29,66667
+24/08/18 10:40:45.160 : INFO  : OK : Read License Plate : SBE6550 ( Uruguay) ) Confidence : 90,94, Character height : 21,50 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: -1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Camera 1 
+24/08/18 10:40:45.328 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SBE6550
+24/08/18 10:41:00.201 : WARN  : WARNING 2 : Cam:1 Plate : SCA7870 Filtered. Reason : Min character height not passed. Value: 14,375
+24/08/18 10:41:00.379 : WARN  : WARNING 2 : Cam:1 Plate : SCA7870 Filtered. Reason : Min character height not passed. Value: 15
+24/08/18 10:41:00.513 : WARN  : WARNING 2 : Cam:1 Plate : SCA7870 Filtered. Reason : Min character height not passed. Value: 16,14286
+24/08/18 10:41:00.647 : WARN  : WARNING 2 : Cam:1 Plate : SCA7870 Filtered. Reason : Min character height not passed. Value: 16,57143
+24/08/18 10:41:00.807 : WARN  : WARNING 2 : Cam:1 Plate : SCA7870 Filtered. Reason : Min character height not passed. Value: 17,14286
+24/08/18 10:41:00.973 : WARN  : WARNING 2 : Cam:1 Plate : SCA7870 Filtered. Reason : Min character height not passed. Value: 18,14286
+24/08/18 10:41:01.148 : WARN  : WARNING 2 : Cam:1 Plate : SCA7870 Filtered. Reason : Min character height not passed. Value: 18,71428
+24/08/18 10:41:01.232 : WARN  : WARNING 2 : Cam:1 Plate : SCA7870 Filtered. Reason : Min character height not passed. Value: 19,14286
+24/08/18 10:41:02.074 : WARN  : WARNING 2 : Cam:1 Plate : SCA7870 Filtered. Reason : Max character height not passed. Value: 27,28572
+24/08/18 10:41:02.229 : WARN  : WARNING 2 : Cam:1 Plate : SCA7870 Filtered. Reason : Max character height not passed. Value: 29,42857
+24/08/18 10:41:02.391 : WARN  : WARNING 2 : Cam:1 Plate : SCA2870 Filtered. Reason : Filter min confidence plate not passed. Value: 66,57832
+24/08/18 10:41:02.488 : INFO  : OK : Read License Plate : SCA7870 ( Uruguay) ) Confidence : 98,52, Character height : 23,43 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: 1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Camera 1 
+24/08/18 10:41:02.542 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SCA7870
+24/08/18 10:56:30.162 : WARN  : WARNING 2 : Cam:1 Plate : SBT5512 Filtered. Reason : Max character height not passed. Value: 42,71429
+24/08/18 10:56:30.293 : WARN  : WARNING 2 : Cam:1 Plate : SBT5512 Filtered. Reason : Max character height not passed. Value: 40,71429
+24/08/18 10:56:30.418 : WARN  : WARNING 2 : Cam:1 Plate : SBT5512 Filtered. Reason : Max character height not passed. Value: 35,375
+24/08/18 10:56:30.549 : WARN  : WARNING 2 : Cam:1 Plate : SBT5512 Filtered. Reason : Max character height not passed. Value: 33
+24/08/18 10:56:30.657 : WARN  : WARNING 2 : Cam:1 Plate : SBT5512 Filtered. Reason : Max character height not passed. Value: 29,375
+24/08/18 10:56:30.803 : WARN  : WARNING 2 : Cam:1 Plate : SBT5512 Filtered. Reason : Max character height not passed. Value: 28,14286
+24/08/18 10:56:31.466 : INFO  : OK : Read License Plate : SBT5512 ( Uruguay) ) Confidence : 96,35, Character height : 23,75 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: -1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Camera 1 
+24/08/18 10:56:31.535 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SBT5512
+24/08/18 10:56:31.848 : WARN  : WARNING 2 : Cam:1 Plate : SBT5512 Filtered. Reason : Filter min. last occurrence not passed.
+24/08/18 10:57:25.600 : WARN  : WARNING 2 : Cam:1 Plate : SCJ7861 Filtered. Reason : Max character height not passed. Value: 35,71429
+24/08/18 10:57:25.710 : WARN  : WARNING 2 : Cam:1 Plate : SCJ7861 Filtered. Reason : Max character height not passed. Value: 32,14286
+24/08/18 10:57:25.864 : WARN  : WARNING 2 : Cam:1 Plate : SCJ7861 Filtered. Reason : Max character height not passed. Value: 28,85714
+24/08/18 10:57:26.635 : INFO  : OK : Read License Plate : SCJ7861 ( Uruguay) ) Confidence : 99,90, Character height : 26,14 ,Format: 211, Speed: -1,00 km/h , Speed Confidence  0,00 , Direction: -1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Camera 1 
+27/08/18 10:30:27.001 : WARN  : WARNING 2 : Cam:1 Plate : BDW9042 Filtered. Reason : Filter min confidence plate not passed. Value: 54.94434
+27/08/18 10:30:27.396 : WARN  : WARNING 2 : Cam:1 Plate : SBD9042 Filtered. Reason : Filter min confidence plate not passed. Value: 75.24402
+27/08/18 10:30:28.046 : INFO  : OK : Read License Plate : SBD042 ( Uruguay) ) Confidence : 82.96, Character height : 35.00 ,Format: 211, Speed: -1.00 km/h , Speed Confidence  0.00 , Direction: 0 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Salida Sub 
+27/08/18 10:30:28.171 : DEBUG : TriggerAction IN
+27/08/18 10:30:28.171 : DEBUG : TriggerAction: listtype 0 True
+27/08/18 10:30:28.171 : DEBUG : TriggerAction: http False
+27/08/18 10:30:28.171 : DEBUG : TriggerAction: promad False
+27/08/18 10:30:28.176 : DEBUG : TriggerAction: CL_code NEURAL
+27/08/18 10:30:28.176 : DEBUG : TriggerAction: amz False
+27/08/18 10:30:28.176 : DEBUG : TriggerAction: hw False
+27/08/18 10:30:28.176 : DEBUG : TriggerAction: pelco False
+27/08/18 10:30:28.186 : DEBUG : TriggerAction: mil False ind False
+27/08/18 10:30:28.186 : DEBUG : TriggerAction: xml True
+27/08/18 10:30:28.186 : DEBUG : TriggerAction XML
+27/08/18 10:30:28.186 : DEBUG : TriggerAction send_XML True
+27/08/18 10:30:28.191 : DEBUG : TriggerAction send_XML TYPE: 1
+27/08/18 10:30:28.191 : DEBUG : sendXML_NEURAL mXMLsQueue.0 < 100
+27/08/18 10:30:28.191 : WARN  : WARNING 3: SEND EVENT READ PLATE :  SBD042
+27/08/18 10:30:28.196 : DEBUG : sendXML_NEURAL END
+27/08/18 10:30:28.196 : DEBUG : TriggerAction send_XML RET
+27/08/18 10:31:34.444 : WARN  : WARNING 2 : Cam:6 Plate : B539393 Filtered. Reason : Min character height not passed. Value: 26.5
+27/08/18 10:31:36.604 : INFO  : OK : Read License Plate : B539393 ( Uruguay) ) Confidence : 99.90, Character height : 37.43 ,Format: 211, Speed: -1.00 km/h , Speed Confidence  0.00 , Direction: 1 , Lane 0, Make , Make Confidence 0, Color , Color Confidence 0 Camera : Entrada Sub1 
+27/08/18 10:31:36.674 : DEBUG : TriggerAction IN
+27/08/18 10:31:36.674 : DEBUG : TriggerAction: listtype 0 True
+27/08/18 10:31:36.679 : DEBUG : TriggerAction: http False
+27/08/18 10:31:36.679 : DEBUG : TriggerAction: promad False
+27/08/18 10:31:36.679 : DEBUG : TriggerAction: CL_code NEURAL
+27/08/18 10:31:36.679 : DEBUG : TriggerAction: amz False
+27/08/18 10:31:36.684 : DEBUG : TriggerAction: hw False
+27/08/18 10:31:36.684 : DEBUG : TriggerAction: pelco False
+27/08/18 10:31:36.684 : DEBUG : TriggerAction: mil False ind False
+27/08/18 10:31:36.684 : DEBUG : TriggerAction: xml True
+27/08/18 10:31:36.684 : DEBUG : TriggerAction XML
+27/08/18 10:31:36.689 : DEBUG : TriggerAction send_XML True
+27/08/18 10:31:36.689 : DEBUG : TriggerAction send_XML TYPE: 1
+27/08/18 10:31:36.694 : DEBUG : sendXML_NEURAL mXMLsQueue.0 < 100
+27/08/18 10:31:36.694 : WARN  : WARNING 3: SEND EVENT READ PLATE :  B539393
+27/08/18 10:31:36.694 : DEBUG : sendXML_NEURAL END
+27/08/18 10:31:36.694 : DEBUG : TriggerAction send_XML RET
+27/08/18 10:31:38.749 : WARN  : WARNING 2 : Cam:6 Plate : B539393 Filtered. Reason : Filter different plate not passed. Last plate
+27/08/18 10:31:40.144 : WARN  : WARNING 2 : Cam:6 Plate : B539393 Filtered. Reason : Filter different plate not passed. Last plate

@@ -1,5 +1,11 @@
+<div class="todo"></div>
+<div class="graf">
+
+
+</div>
 <div class="container dashboard">
     <div class="row">
+       
 
         <!-- GRAFICA PRINCIPAL -->
         <div class="col-7 ">
@@ -8,7 +14,7 @@
                     <span class="titulo">Lecturas diarias</span>
                 </div>
                 <div class="grafica">
-                    <canvas id="myChart" class="graficaLecturas" width="665" height="200"></canvas>
+                    <canvas id="myChart" class="graficaLecturas" width="665" height="270"></canvas>
                 </div>
             </div>
         </div>
@@ -125,9 +131,6 @@
                         <canvas id="graficaFiltros" class="graficaFiltros" width="665" height="200"></canvas>
                     </div>
 
-
-
-
                 </div>
             </div>
         </div>
@@ -143,9 +146,6 @@
                         <canvas id="graficaFiltros" class="graficaFiltros" width="665" height="200"></canvas>
                     </div>
 
-
-
-
                 </div>
             </div>
         </div>
@@ -159,33 +159,39 @@
 
     </div>
 
-    <div class="row">
+    <div class="row" ng-repeat="filtro in filtros">
         <div class="col-12">
             <div class="row caja cajaDatosFiltros">
                 <div class="col-12">
 
                     <div class="row">
-                        <div class="col col-4">
-                            <span class="dato">Filter min confidence plate.</span>
+                        <div class="col col-3">
+                            <span class="dato">{{filtro.filtro}}</span>
                             <span class="titulo">Filtro</span>
                         </div>
                         <div class="col col-1">
-                            <span class="dato">7054</span>
+                            <span class="dato">{{filtro.cantidad}}</span>
                             <span class="titulo">Cantidad</span>
                         </div>
                         <div class="col col-1">
-                            <span class="dato">32.29</span>
+                            <span class="dato">{{filtro.min}}</span>
                             <span class="titulo">Min</span>
                         </div>
                         <div class="col col-1">
-                            <span class="dato">81.99</span>
+                            <span class="dato">{{filtro.max}}</span>
                             <span class="titulo">Max</span>
                         </div>
-                        <div class="col col-3">
-                            <span class="dato">72.3</span>
+                        <div class="col col-2">
+                            <span class="dato">{{filtro.promedio}}</span>
                             <span class="titulo">Promedio</span>
                         </div>
-                     
+                        <div class="col col-4">
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: {{filtro.porcentaje}}%;" aria-valuenow="{filtro.porcentaje{}}"
+                                    aria-valuemin="0" aria-valuemax="100">{{filtro.porcentaje}}</div>
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>

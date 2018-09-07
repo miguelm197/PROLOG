@@ -11,8 +11,8 @@ app.factory("dashboardFact", ["$http", function ($http) {
         getCantidadLecturasNoLeidas: function () {
             return $http.get(servicio + "/getCantidadLecturasNoLeidas");
         },
-        getCantidadDeLecturasPorDia: function () {
-            return $http.get(servicio + "/getCantidadDeLecturasPorDia");
+        getCantidadDeLecturasYFiltradasPorDia: function () {
+            return $http.get(servicio + "/getCantidadDeLecturasYFiltradasPorDia");
         },
         getCantidadFiltros: function () {
             return $http.get(servicio + "/getCantidadFiltros");

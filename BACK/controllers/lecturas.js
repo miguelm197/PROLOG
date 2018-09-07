@@ -113,7 +113,6 @@ exports.getCantidadLecturasNoLeidas = function (req, res) {
 
 exports.getCantidadDeLecturasPorDia = function (req, res) {
   let colLecturas = [];
-  var ultimaFecha = "01/01/1997";
   for (const lectura of lecturas) {
     if (lectura.readPlate) {
       let fecha = lectura.fecha.format("DD/MM/YYYY");
@@ -137,6 +136,55 @@ exports.getCantidadDeLecturasPorDia = function (req, res) {
   res.status(200).jsonp(colLecturas);
 }
 
+exports.getCantidadDeLecturasYFiltradasPorDia = function (req, res) {
+
+  let objLecturas = {
+    lecturas: [],
+    filtradas: []
+  }
+
+
+  for (const lectura of lecturas) {
+    let fecha = lectura.fecha.format("DD/MM/YYYY");
+
+    if (lectura.readPlate) {
+      let existeFecha = false;
+
+      objLecturas.lecturas.forEach(element => {
+        if (element.fecha.format("DD/MM/YYYY") == fecha) {
+          element.cantidad++;
+          existeFecha = true;
+        }
+      });
+      if (!existeFecha) {
+        objLecturas.lecturas.push({
+          fecha: lectura.fecha,
+          cantidad: 1
+        })
+      }
+
+    } else {
+
+      let existeFecha = false;
+
+      objLecturas.filtradas.forEach(element => {
+        if (element.fecha.format("DD/MM/YYYY") == fecha) {
+          element.cantidad++;
+          existeFecha = true;
+        }
+      });
+      if (!existeFecha) {
+        objLecturas.filtradas.push({
+          fecha: lectura.fecha,
+          cantidad: 1
+        })
+      }
+
+    }
+  }
+  res.status(200).jsonp(objLecturas);
+}
+
 
 exports.getCantidadFiltros = function (req, res) {
   let colFiltros = [];
@@ -153,9 +201,9 @@ exports.getCantidadFiltros = function (req, res) {
             if (filtroLectura.valor) {
               filtroCol.sumatoria = parseInt(filtroCol.sumatoria) + parseInt(filtroLectura.valor);
               if (filtroLectura.valor < filtroCol.min) {
-                filtroCol.min = filtroLectura.valor;
+                filtroCol.min = parseFloat(filtroLectura.valor);
               } else if (filtroLectura.valor > filtroCol.max) {
-                filtroCol.max = filtroLectura.valor;
+                filtroCol.max = parseFloat(filtroLectura.valor);
               }
             } else {
               filtroCol.min = false;
@@ -196,7 +244,35 @@ exports.getCantidadFiltros = function (req, res) {
 }
 
 
+exports.getFiltrosPorFecha = function (req, res) {
+  let colFiltros = [];
+  for (const lectura of lecturas) {
+    if (lectura.filtros) {
+      let fecha = lectura.fecha.format("DD/MM/YYYY");
 
+      let existeFecha = false;
+      colFiltros.forEach(element => {
+        if (element.fecha.format("DD/MM/YYYY") == fecha) {
+          element.cantidad++;
+
+
+
+
+
+          existeFecha = true;
+        }
+      });
+      if (!existeFecha) {
+        colLecturas.push({
+          fecha: lectura.fecha,
+          cantidad: 1
+        })
+      }
+
+    }
+  }
+  res.status(200).jsonp(colLecturas);
+}
 
 
 

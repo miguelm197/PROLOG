@@ -64,7 +64,7 @@ body {
 
 /* GRAFICA PRINCIPAL */
 .grafica {
-    padding-top: 31px;
+    /* padding-top: 31px; */
     margin-left: -10px;
     margin-bottom: -10px;
 }
@@ -76,6 +76,7 @@ body {
 .cajaGrafica .cabezal {
     padding: 12px;
     padding-left: 20px;
+    margin-bottom: -39px;
 }
 
 .cajaGrafica .cabezal .titulo {
@@ -137,23 +138,43 @@ body {
     cursor: pointer;
 }
 
-
-
-
 /* DATOS FILTROS */
-.dashboard .cajaDatosFiltros{
-    padding: 20px 10px;
+.dashboard .cajaDatosFiltros {
+    padding: 25px 10px;
 }
-.dashboard .cajaDatosFiltros .col > *{
+
+.dashboard .cajaDatosFiltros .col>* {
     display: block;
 }
 
-.dashboard .cajaDatosFiltros .col .dato{
+.dashboard .cajaDatosFiltros .col .dato {
     font-size: 17px;
 }
 
-
-.dashboard .cajaDatosFiltros .col .titulo{
+.dashboard .cajaDatosFiltros .col .titulo {
     font-size: 15px;
     color: gray;
+    font-weight: 200;
 }
+.dashboard .cajaDatosFiltros .col .progress {
+    margin-top: 13px;    
+    
+}
+
+
+.dashboard .cajaDatosFiltros .col .progress .progress-bar {
+    background-color:  #4bda98;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

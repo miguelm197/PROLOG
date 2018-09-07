@@ -16,14 +16,20 @@ app.controller("dashboardCtrl", [
         dashboardFact.getCantidadLecturasNoLeidas().then(function (data) {
             $scope.indicador.lecturasFiltradas = data.data.cantidadLecturas;
         });
-        dashboardFact.getCantidadDeLecturasPorDia().then(function (data) {
+        dashboardFact.getCantidadDeLecturasYFiltradasPorDia().then(function (data) {
             let datos = data.data;
             let labels = [];
+            let labels2 = [];
             let dataGraf = [];
+            let dataGraf2 = [];
 
-            datos.forEach(element => {
+            datos.lecturas.forEach(element => {
                 labels.push(element.fecha);
                 dataGraf.push(element.cantidad);
+            });
+            datos.filtradas.forEach(element => {
+                labels2.push(element.fecha);
+                dataGraf2.push(element.cantidad);
             });
 
             let ctx = document.getElementById("myChart").getContext("2d");
@@ -32,20 +38,31 @@ app.controller("dashboardCtrl", [
                 data: {
                     labels: labels,
                     datasets: [{
-                        data: dataGraf,
-                        borderColor: "transparent",
-                        backgroundColor: "#4bda98",
-                        pointStyle: "line",
-                        lineTension: 0
-                    }]
+                        label: "Filtradas",
+                            data: dataGraf2,
+                            borderColor: "transparent",
+                            backgroundColor: "#1b6542e6",
+                            pointStyle: "line",
+                            lineTension: 0
+                        },
+                        {
+                            label: "Leídas",
+                            data: dataGraf,
+                            borderColor: "transparent",
+                            backgroundColor: "#4bda98e6",
+                            pointStyle: "line",
+                            lineTension: 0
+                        },
+
+                    ]
                 },
                 options: {
                     legend: {
-                        display: false,
-                        position: "",
+                        display: true,
+                        position: 'top',
                         labels: {
-                            boxWidth: 100,
-                            fontColor: "black"
+                            boxWidth: 13,
+                            fontColor: 'gray',
                         }
                     },
                     scales: {
@@ -54,7 +71,8 @@ app.controller("dashboardCtrl", [
                                 display: false
                             },
                             scaleLabel: {
-                                display: false
+                                display: false,
+                                
                             },
 
                             type: "time",
@@ -69,7 +87,6 @@ app.controller("dashboardCtrl", [
                             ticks: {
                                 display: false,
                                 min: 0
-                                // max: 120,
                             }
                         }],
                         yAxes: [{
@@ -81,7 +98,6 @@ app.controller("dashboardCtrl", [
                             ticks: {
                                 display: false,
                                 min: 0
-                                // max: 120,
                             }
                         }]
                     }
@@ -91,6 +107,25 @@ app.controller("dashboardCtrl", [
         dashboardFact.getCantidadFiltros().then(function (data) {
             $scope.filtros = data.data;
 
+            var total = 0;
+
+            $scope.filtros.forEach(element => {
+                total = total + element.cantidad;
+            });
+
+            $scope.filtros.forEach(element => {
+                let porcentaje = (element.cantidad / total) * 100;
+
+                if (element.max) {
+                    element.max = parseFloat(element.max.toFixed(2));
+                    element.min = parseFloat(element.min.toFixed(2));
+                }
+
+                if (element.promedio)
+                    element.promedio = element.promedio.toFixed(2);
+
+                element.porcentaje = porcentaje.toFixed(2);
+            });
 
         })
 

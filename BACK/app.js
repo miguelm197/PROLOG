@@ -81,6 +81,9 @@ router.route("/getCantidadFiltros")
 router.route("/getCantidadDeLecturasYFiltradasPorDia")
 .get(CtrlLectura.getCantidadDeLecturasYFiltradasPorDia)
 
+router.route("/getLecturasLeidasForTable")
+.get(CtrlLectura.getLecturasLeidasForTable)
+
 
 
 

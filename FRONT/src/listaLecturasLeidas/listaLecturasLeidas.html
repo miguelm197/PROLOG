@@ -1,0 +1,151 @@
+<div class="container listaLecturasLeidas">
+  <div class="caja">
+
+    <div class="cabeza">
+      <div class="row arriba">
+        <div class="col-12">
+          <span class="titulo">Lecturas leídas</span>
+        </div>
+      </div>
+      <div class="row abajo">
+        <div class="col-8 cantidadFilas">
+          <span>Mostrar </span>
+
+          <div class="btn-group dropdown">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              {{cantidadFilas}}
+            </button>
+            <div class="dropdown-menu">
+              <button class="dropdown-item" type="button" ng-click="cantidadFilas=5">5</button>
+              <button class="dropdown-item" type="button" ng-click="cantidadFilas=25">25</button>
+              <button class="dropdown-item" type="button" ng-click="cantidadFilas=50">50</button>
+              <button class="dropdown-item" type="button" ng-click="cantidadFilas=100">100</button>
+              <button class="dropdown-item" type="button" ng-click="cantidadFilas=9999999">Todos</button>
+            </div>
+          </div>
+
+          <span>filas. </span>
+        </div>
+        <div class="col-4 buscador">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fas fa-search"></i></span>
+            </div>
+            <input type="text" class="form-control" placeholder="Buscar " ng-model="inBusqueda">
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+    <div class="medio">
+
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col" class="N">#</th>
+            <th scope="col">Matrícula</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Hora</th>
+            <th scope="col">Confianza</th>
+            <th scope="col">Altura</th>
+            <th scope="col">Dirección</th>
+            <th scope="col">País</th>
+            <th scope="col">Cámara</th>
+            <th scope="col">Send</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="lectura in lecturasLeidas">
+            <th scope="row">{{lectura.indice}}</th>
+            <td>{{lectura.matricula}}</td>
+            <td>{{lectura.fecha}}</td>
+            <td>{{lectura.hora}}</td>
+            <td>{{lectura.confidence}}</td>
+            <td>{{lectura.characterHeight}}</td>
+            <td>{{lectura.direction}}</td>
+            <td>{{lectura.format}}</td>
+            <td>{{lectura.camara}}</td>
+            <td ng-show="lectura.send"><i class="fas fa-check"></i></td>
+            <td ng-show="!lectura.send" class="noSend"><i class="fas fa-exclamation-triangle"></i></td>
+          </tr>
+
+
+        </tbody>
+      </table>
+    </div>
+
+
+
+
+    <div class="pie">
+
+      <ul class="pagination justify-content-end">
+
+        <li class="page-item disabled">
+          <span class="page-link">{{totalLecturasF}}</span>
+        </li>
+        <li class="page-item" id="priPag" ng-click="fnPriPag()">
+          <span class="page-link"> <i class="fas fa-angle-double-left"></i> </span>
+        </li>
+        <li class="page-item" id="antPag" ng-click="fnAntPag()">
+          <span class="page-link"> <i class="fas fa-angle-left"></i> </span>
+        </li>
+
+
+        <li class="page-item" ng-repeat="pag in pagTabla" id="{{pag==='...'?'inter':pag}}">
+
+
+
+
+          <a class="page-link" href="" ng-if="pag==='...'">
+
+            <span class="puntos" ng-hide="busPag" ng-click="busPag=true">...</span>
+
+
+            <div class="input-group mb-3 campoIn" ng-show="busPag">
+              <input type="text" class="form-control" placeholder="Página" id="inPag">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" ng-click="buscarPag()">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-outline-secondary" type="button" ng-click="busPag=false">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+
+          </a>
+
+
+          <a class="page-link" href="" ng-click="mostrarGrupoFilas(pag)" ng-hide="pag==='...'">
+            {{pag}}
+          </a>
+
+
+        </li>
+
+
+
+
+        <li class="page-item" id="sigPag" ng-click="fnSigPag()">
+          <span class="page-link"><i class="fas fa-angle-right"></i></span>
+        </li>
+        <li class="page-item" id="ultPag" ng-click="fnUltPag()">
+          <span class="page-link"> <i class="fas fa-angle-double-right"></i> </span>
+        </li>
+
+      </ul>
+
+    </div>
+
+
+
+
+  </div>
+
+</div>

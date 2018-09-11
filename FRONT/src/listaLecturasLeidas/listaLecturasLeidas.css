@@ -1,0 +1,71 @@
+.listaLecturasLeidas {
+    padding: 20px 0px;
+}
+
+.listaLecturasLeidas .cabeza {
+    padding: 20px 30px;
+}
+
+.listaLecturasLeidas .cabeza .arriba .titulo {
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.listaLecturasLeidas .cabeza .abajo {
+    padding-top: 24px;
+}
+
+.listaLecturasLeidas .medio {
+    height: 632px;
+    overflow-y: auto;
+}
+
+.listaLecturasLeidas .pie {
+    padding: 20px 30px;
+}
+
+.listaLecturasLeidas .pie #inter a * {
+    padding: 0px !important;
+    margin: 0px !important;
+    margin-left: -0.3px !important;
+}
+
+.listaLecturasLeidas .pie #inter a * {
+    border: none;
+    border-radius: 0px;
+}
+
+.listaLecturasLeidas .pie #inter a .input-group {
+    height: 36px;
+    width: 164px;
+    margin-left: -11px !important;
+    margin-top: -8px !important;
+    margin-right: -12px !important;
+    margin-bottom: -8px !important;
+}
+
+.listaLecturasLeidas .pie #inter a input {
+    height: auto;
+    padding-left: 10px !important;
+}
+
+.listaLecturasLeidas .pie #inter a button {
+    padding: 0px 10px !important;
+    padding-left: 13px;
+}
+
+.listaLecturasLeidas .noSend {
+    color: rgb(182, 16, 16);
+}
+
+.listaLecturasLeidas .table .N {
+    width: 50px;
+}
+
+.listaLecturasLeidas .noSend {
+    color: rgb(182, 16, 16);
+}
+
+.listaLecturasLeidas .table .N {
+    width: 50px;
+}

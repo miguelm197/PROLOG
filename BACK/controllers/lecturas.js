@@ -14,6 +14,8 @@ exports.getLecturas = function (req, res) {
 }
 
 
+
+
 exports.getFechaInicioFinLecturas = function (req, res) {
   let colFechas = new Object();
 
@@ -39,6 +41,7 @@ exports.getLecturasLeidas = function (req, res) {
 
 
 
+
 exports.getLecturasNoLeidas = function (req, res) {
   let colLecturas = [];
   for (const lectura of lecturas) {
@@ -48,6 +51,7 @@ exports.getLecturasNoLeidas = function (req, res) {
   }
   res.status(200).jsonp(colLecturas);
 }
+
 
 
 
@@ -66,6 +70,7 @@ exports.getLecturaPorId = function (req, res) {
 
 
 
+
 exports.getFiltrosPorLecturaId = function (req, res) {
   let colFiltros = [];
   let paramId = req.query.id;
@@ -81,6 +86,7 @@ exports.getFiltrosPorLecturaId = function (req, res) {
 
 
 
+
 exports.getCantidadLecturasLeidas = function (req, res) {
   let colLecturas = [];
   for (const lectura of lecturas) {
@@ -93,6 +99,9 @@ exports.getCantidadLecturasLeidas = function (req, res) {
   };
   res.status(200).jsonp(cantLecturas);
 }
+
+
+
 
 exports.getCantidadLecturasNoLeidas = function (req, res) {
   let colLecturas = [];
@@ -135,6 +144,9 @@ exports.getCantidadDeLecturasPorDia = function (req, res) {
   }
   res.status(200).jsonp(colLecturas);
 }
+
+
+
 
 exports.getCantidadDeLecturasYFiltradasPorDia = function (req, res) {
 
@@ -184,6 +196,8 @@ exports.getCantidadDeLecturasYFiltradasPorDia = function (req, res) {
   }
   res.status(200).jsonp(objLecturas);
 }
+
+
 
 
 exports.getCantidadFiltros = function (req, res) {
@@ -244,31 +258,55 @@ exports.getCantidadFiltros = function (req, res) {
 }
 
 
-exports.getFiltrosPorFecha = function (req, res) {
-  let colFiltros = [];
+
+
+// exports.getFiltrosPorFecha = function (req, res) {
+//   let colFiltros = [];
+//   for (const lectura of lecturas) {
+//     if (lectura.filtros) {
+//       let fecha = lectura.fecha.format("DD/MM/YYYY");
+
+//       let existeFecha = false;
+//       colFiltros.forEach(element => {
+//         if (element.fecha.format("DD/MM/YYYY") == fecha) {
+
+//           for (const filtros of element.filtros) {
+//             if (filtros == )
+//           }
+
+
+
+
+//           existeFecha = true;
+//         }
+
+//       });
+
+
+//     }
+//   }
+//   res.status(200).jsonp(colLecturas);
+// }
+
+
+exports.getLecturasLeidasForTable = function (req, res) {
+  let colLecturas = [];
+  let indice = 1;
   for (const lectura of lecturas) {
-    if (lectura.filtros) {
-      let fecha = lectura.fecha.format("DD/MM/YYYY");
-
-      let existeFecha = false;
-      colFiltros.forEach(element => {
-        if (element.fecha.format("DD/MM/YYYY") == fecha) {
-          element.cantidad++;
-
-
-
-
-
-          existeFecha = true;
-        }
-      });
-      if (!existeFecha) {
-        colLecturas.push({
-          fecha: lectura.fecha,
-          cantidad: 1
-        })
-      }
-
+    if (lectura.readPlate) {
+      colLecturas.push({
+        indice: indice,
+        matricula: lectura.matricula,
+        fecha: lectura.fecha.format("DD/MM/YYYY"),
+        hora: lectura.fecha.format("HH:mm:ss"),
+        confidence: lectura.readPlate[0].confidence,
+        characterHeight: lectura.readPlate[0].characterHeight,
+        direction: lectura.readPlate[0].direction,
+        format: lectura.readPlate[0].format,
+        camara: lectura.readPlate[0].camara,
+        send:lectura.readPlate[0].send?true:false
+      })
+      indice++;
     }
   }
   res.status(200).jsonp(colLecturas);
@@ -276,7 +314,23 @@ exports.getFiltrosPorFecha = function (req, res) {
 
 
 
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+// # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 
 
@@ -493,18 +547,20 @@ function leerArchivo(path) {
       var camara = dato[7];
 
       //confidence
-      if (dato[5].split(",").length > 1) {
-        confidence = dato[5].split(",")[0] + "," + dato[5].split(",")[1];
-      } else {
-        confidence = dato[5].split(",")[0];
-      }
+      // if (dato[5].split(",").length > 1) {
+      //   confidence = dato[5].split(",")[0] + "," + dato[5].split(",")[1];
+      // } else {
+      //   confidence = dato[5].split(",")[0];
+      // }
+      confidence = dato[5].split(",")[0];
 
       //characterHeight
-      if (dato[6].split(",").length > 1) {
-        characterHeight = dato[6].split(",")[0] + "," + dato[6].split(",")[1].replace(" ", "");
-      } else {
+      // if (dato[6].split(",").length > 1) {
+      //   characterHeight = dato[6].split(",")[0] + "," + dato[6].split(",")[1].replace(" ", "");
+      // } else {
+      //   characterHeight = dato[6].split(",")[0].replace(" ", "");
+      // }
         characterHeight = dato[6].split(",")[0].replace(" ", "");
-      }
 
       lecturaObj["fecha"] = fechaDate(fecha, hora);
       lecturaObj["matricula"] = matricula;

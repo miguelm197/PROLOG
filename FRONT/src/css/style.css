@@ -1,7 +1,41 @@
+
+body {
+  background-color: #f4f4f4;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.caja {
+  background-color: #fff;
+  margin: 0px;
+  margin-top: 30px;
+}
+
+
+
+/* 
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+. 
+*/
 /* @import url('https://fonts.googleapis.com/css?family=Raleway:100,400,500');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700'); */
-
+/* 
 .navbar {
   background-color: black;
   position: fixed !important;
@@ -24,9 +58,9 @@ body > .container-fluid {
   text-align: center;
   width: 100px;
   cursor: pointer;
-}
+} */
 /* ====================================================== */
-.izquierda {
+/* .izquierda {
   position: absolute;
   left: 0px;
   width: 30%;
@@ -86,18 +120,16 @@ table th .filtreable {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
+} */
 /* TABLA MATRICULAS NO LEIDAS */
-.tableMatriculasNoLeidas tbody tr {
+/* .tableMatriculasNoLeidas tbody tr {
   cursor: pointer;
 }
 .tableMatriculasNoLeidas table .filtro.rango {
   width: calc(50% - 25px)
-}
-
+} */
 /* MODAL */
-.mmodal {
+/* .mmodal {
   display: none;
 }
 .mmodal .fondo {
@@ -206,14 +238,11 @@ table th .filtreable {
   padding-top: 30px;
   width: 70%;
   padding-right: 30px;
-}
-
+} */
 /* #########################################
                  grafica
     ######################################### */
-
-
-.grafica {
+/* .grafica {
   position: relative;
   width: 250px;
   height: 250px;
@@ -238,6 +267,4 @@ table th .filtreable {
     width: 400px;
     height: 400px;
   }
-  
-  
-  
+   */

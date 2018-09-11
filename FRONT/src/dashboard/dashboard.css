@@ -1,16 +1,5 @@
-body {
-    background-color: #f4f4f4;
-    font-family: 'Open Sans', sans-serif;
-}
-
 .dashboard {
     padding: 20px 0px;
-}
-
-.dashboard .caja {
-    background-color: #fff;
-    margin: 0px;
-    margin-top: 30px;
 }
 
 .dashboard .cajaIndicadores {
@@ -156,25 +145,11 @@ body {
     color: gray;
     font-weight: 200;
 }
-.dashboard .cajaDatosFiltros .col .progress {
-    margin-top: 13px;    
-    
-}
 
+.dashboard .cajaDatosFiltros .col .progress {
+    margin-top: 13px;
+}
 
 .dashboard .cajaDatosFiltros .col .progress .progress-bar {
-    background-color:  #4bda98;
+    background-color: #4bda98;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

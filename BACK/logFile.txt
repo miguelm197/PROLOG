@@ -78,7 +78,6 @@
 24/08/18 18:18:00.837 : DEBUG : TriggerAction send_XML True
 24/08/18 18:18:00.842 : DEBUG : TriggerAction send_XML TYPE: 1
 24/08/18 18:18:00.842 : DEBUG : sendXML_NEURAL mXMLsQueue.0 < 100
-24/08/18 18:18:00.842 : WARN  : WARNING 3: SEND EVENT READ PLATE :  B132151
 24/08/18 18:18:00.847 : DEBUG : sendXML_NEURAL END
 24/08/18 18:18:00.847 : DEBUG : TriggerAction send_XML RET
 24/08/18 18:20:09.403 : WARN  : WARNING 2 : Cam:1 Plate : SCE3053 Filtered. Reason : Min character height not passed. Value: 14

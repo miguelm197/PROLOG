@@ -9,7 +9,13 @@ app.config(function ($routeProvider, $locationProvider) {
             templateUrl: 'src/dashboard/dashboard.html',
             controller: 'dashboardCtrl'
         })
-        .otherwise({ redirectTo: "/home" });
+        .when('/listaLecturasLeidas', {
+            templateUrl: 'src/listaLecturasLeidas/listaLecturasLeidas.html',
+            controller: 'listaLecturasLeidasCtrl'
+        })
+        .otherwise({
+            redirectTo: "/home"
+        });
 
 });
 
@@ -22,5 +28,5 @@ app.run([function () {
     var portServices = 3000;
 
     app.config['urlServicios'] = urlServices + ":" + portServices;
-    
+
 }]);

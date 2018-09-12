@@ -1,10 +1,15 @@
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">LOGS NEURAL</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <i class="fas fa-file-alt"></i>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+      aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarColor01">
+    <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <a class="nav-link" href="#!/home">Home</a>
@@ -12,10 +17,15 @@
         <li class="nav-item">
           <a class="nav-link" href="#!/listaLecturasLeidas">Leídas</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!/listaLecturasFiltradas">Filtradas</a>
+        </li>
       </ul>
-      <form class="form-inline">
-        <input class="form-control mr-sm-2" placeholder="Buscar" >
-        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
+      <form class="form-inline buscar">
+        <input class="form-control mr-sm-2" placeholder="Buscar">
+        <button class="btn btn-outline-info my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> Buscar</button>
       </form>
     </div>
-  </nav>
+
+  </div>
+</nav>

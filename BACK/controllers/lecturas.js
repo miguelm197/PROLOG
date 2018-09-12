@@ -313,6 +313,25 @@ exports.getLecturasLeidasForTable = function (req, res) {
 }
 
 
+exports.getLecturasFiltradasForTable = function (req, res) {
+  let colLecturas = [];
+  let indice = 1;
+  for (const lectura of lecturas) {
+    if (!lectura.readPlate) {
+      colLecturas.push({
+        indice: indice,
+        matricula: lectura.matricula,
+        fecha: lectura.fecha.format("DD/MM/YYYY"),
+        hora: lectura.fecha.format("HH:mm:ss"),
+
+      })
+      indice++;
+    }
+  }
+  res.status(200).jsonp(colLecturas);
+}
+
+
 
 // # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 // # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #

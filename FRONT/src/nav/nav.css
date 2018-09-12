@@ -4,3 +4,21 @@
     width: 100%;
     z-index: 100000;
 }
+
+.navb .buscar input {
+    height: 35px !important;
+    border-radius: 2px;
+    border: none;
+    background-color: #9090901a;
+    color: white;
+
+}
+
+.navb .buscar button {
+    border-radius: 2px;
+    height: 35px;
+}
+
+.navb .navbar-brand i {
+    font-size: 30px;
+}

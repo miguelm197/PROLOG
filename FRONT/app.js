@@ -13,6 +13,10 @@ app.config(function ($routeProvider, $locationProvider) {
             templateUrl: 'src/listaLecturasLeidas/listaLecturasLeidas.html',
             controller: 'listaLecturasLeidasCtrl'
         })
+        .when('/listaLecturasFiltradas', {
+            templateUrl: 'src/listaLecturasFiltradas/listaLecturasFiltradas.html',
+            controller: 'listaLecturasFiltradasCtrl'
+        })
         .otherwise({
             redirectTo: "/home"
         });

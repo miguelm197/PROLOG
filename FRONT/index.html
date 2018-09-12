@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Logs</title>
-    
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
 
 
 
 
-    
+
     <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
-    
+
     <link rel="stylesheet" type="text/css" href="./src/css/style.css">
 
 
@@ -38,7 +38,7 @@
 
 
 
-    
+
     <link rel="stylesheet" type="text/css" href="./src/nav/nav.css">
     <script src="./src/nav/navCtrl.js"></script>
 
@@ -50,6 +50,10 @@
     <script src="./src/listaLecturasLeidas/listaLecturasLeidasCtrl.js"></script>
     <script src="./src/listaLecturasLeidas/listaLecturasLeidasFact.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="./src/listaLecturasFiltradas/listaLecturasFiltradas.css">
+    <script src="./src/listaLecturasFiltradas/listaLecturasFiltradasCtrl.js"></script>
+    <script src="./src/listaLecturasFiltradas/listaLecturasFiltradasFact.js"></script>
+
 
 
 
@@ -59,7 +63,7 @@
 
 <body>
 
-    <div ng-include src="'./src/nav/nav.html'"   class="navb" ng-controller="navCtrl"></div>
+    <div ng-include src="'./src/nav/nav.html'" class="navb" ng-controller="navCtrl"></div>
     <!-- <div ng-include src="'src/nav/nav.html'"></div> -->
     <!-- VISTAS PARCIALES-->
     <div class="vistas" ng-view></div>
@@ -68,7 +72,7 @@
 
 
 
-<!-- 
+    <!-- 
  <form action="http://localhost:3000/upload" method='POST' enctype='multipart/form-data'>
     <input type="file" name='archivo' >
     <input type="submit" value='Subir'>

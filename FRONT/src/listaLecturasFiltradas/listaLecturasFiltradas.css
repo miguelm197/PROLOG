@@ -1,0 +1,73 @@
+.listaLecturasFiltradas {
+    padding: 20px 0px;
+}
+.listaLecturasFiltradas .caja{
+    margin: 0px;
+}
+.listaLecturasFiltradas .cabeza {
+    padding: 20px 30px;
+}
+
+.listaLecturasFiltradas .cabeza .arriba .titulo {
+    font-size: 22px;
+    font-weight: 200;
+}
+
+.listaLecturasFiltradas .cabeza .abajo {
+    padding-top: 24px;
+}
+
+.listaLecturasFiltradas .medio {
+    height: 624px;
+    overflow-y: auto;
+}
+
+.listaLecturasFiltradas .pie {
+    padding: 20px 30px;
+}
+
+.listaLecturasFiltradas .pie #inter a * {
+    padding: 0px !important;
+    margin: 0px !important;
+    margin-left: -0.3px !important;
+}
+
+.listaLecturasFiltradas .pie #inter a * {
+    border: none;
+    border-radius: 0px;
+}
+
+.listaLecturasFiltradas .pie #inter a .input-group {
+    height: 36px;
+    width: 164px;
+    margin-left: -11px !important;
+    margin-top: -8px !important;
+    margin-right: -12px !important;
+    margin-bottom: -8px !important;
+}
+
+.listaLecturasFiltradas .pie #inter a input {
+    height: auto;
+    padding-left: 10px !important;
+}
+
+.listaLecturasFiltradas .pie #inter a button {
+    padding: 0px 10px !important;
+    padding-left: 13px;
+}
+
+.listaLecturasFiltradas .noSend {
+    color: rgb(182, 16, 16);
+}
+
+.listaLecturasFiltradas .table .N {
+    width: 50px;
+}
+
+.listaLecturasFiltradas .noSend {
+    color: rgb(182, 16, 16);
+}
+
+.listaLecturasFiltradas .table .N {
+    width: 50px;
+}

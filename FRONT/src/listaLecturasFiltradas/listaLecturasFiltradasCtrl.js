@@ -1,4 +1,4 @@
-app.controller("listaLecturasLeidasCtrl", ["$scope", "$location", "listaLecturasLeidasFact", function ($scope, $location, listaLecturasLeidasFact) {
+app.controller("listaLecturasFiltradasCtrl", ["$scope", "$location", "listaLecturasFiltradasFact", function ($scope, $location, listaLecturasFiltradasFact) {
 
     $scope.cantidadFilas = 25; //Cantidad de filas a mostrar en la tabla
     $scope.colLecturas = []; //Colección de lecturas obtenidas desde la API
@@ -13,7 +13,7 @@ app.controller("listaLecturasLeidasCtrl", ["$scope", "$location", "listaLecturas
     $scope.busPag = false; //Página que se quiere buscar
 
 
-    listaLecturasLeidasFact.getLecturasLeidasForTable().then(function (data) {
+    listaLecturasFiltradasFact.getLecturasFiltradasForTable().then(function (data) {
 
         let colLecturas = data.data;
         $scope.colLecturas = colLecturas;
@@ -147,13 +147,11 @@ app.controller("listaLecturasLeidasCtrl", ["$scope", "$location", "listaLecturas
                 $scope.colLecturas.forEach(lectura => {
                     let inMatricula = lectura.matricula.toLowerCase();
                     let inFecha = lectura.fecha.toLowerCase();
-                    let inCamara = lectura.camara.toLowerCase();
 
                     if (
 
                         (inMatricula.indexOf(buscado) >= 0) ||
-                        (inFecha.indexOf(buscado) >= 0) ||
-                        (inCamara.indexOf(buscado) >= 0)
+                        (inFecha.indexOf(buscado) >= 0)
 
                     ) {
                         resultB.push(lectura);

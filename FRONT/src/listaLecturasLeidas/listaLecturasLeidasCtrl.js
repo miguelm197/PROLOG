@@ -115,7 +115,6 @@ app.controller("listaLecturasLeidasCtrl", ["$scope", "$location", "listaLecturas
         $scope.buscarPag = function () {
             let u = $scope.gruposLecturas.length;
 
-
             let pag = parseInt($("#inPag").val());
             if (pag > 0 && pag < u) {
 

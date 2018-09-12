@@ -1,7 +1,9 @@
 .listaLecturasLeidas {
     padding: 20px 0px;
 }
-
+.listaLecturasLeidas .caja{
+    margin: 0px;
+}
 .listaLecturasLeidas .cabeza {
     padding: 20px 30px;
 }
@@ -16,7 +18,7 @@
 }
 
 .listaLecturasLeidas .medio {
-    height: 632px;
+    height: 624px;
     overflow-y: auto;
 }
 

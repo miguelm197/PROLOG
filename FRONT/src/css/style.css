@@ -1,10 +1,16 @@
-
 body {
   background-color: #f4f4f4;
   font-family: 'Open Sans', sans-serif;
 }
 
-
+.vistas {
+  overflow: auto;
+  top: 55px !important;
+  height: calc(100% - 55px);
+  /* background: red; */
+  position: absolute;
+  width: 100%;
+}
 
 .caja {
   background-color: #fff;

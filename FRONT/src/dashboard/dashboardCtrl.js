@@ -2,6 +2,9 @@ app.controller("dashboardCtrl", ["$scope", "$location", "dashboardFact", functio
     $scope.indicador = {
         lecturasValidas: 0
     };
+    $scope.fnLecturasValidas = function(){
+        $location.path('/listaLecturasLeidas');
+    }
     dashboardFact.getFechaInicioFinLecturas().then(function (data) {
         $scope.indicador.fechaInicio = moment(data.data.fechaInicio).format("DD/MM/YYYY");
         $scope.indicador.fechaFin = moment(data.data.fechaFin).format("DD/MM/YYYY");
